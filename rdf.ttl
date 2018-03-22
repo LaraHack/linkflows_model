@@ -1,0 +1,86 @@
+#################################################################
+#    RDFs for Review
+#################################################################
+
+@prefix : <http://www.linkflows/example/> .
+@prefix orcid: <http://orcid.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix part: <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#> .
+@prefix ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+
+# submission
+###########################
+
+# identify author
+orcid:0000-0003-0530-4305 a foaf:Person ;
+    foaf:name "Silvio Peroni" ;
+    datacite:hasIdentifier :silvioperoni-orcid ;
+    pro:holdsRoleInTime peroni-author .
+
+:silvioperoni-orcid a datacite:PersonalIdentifier ;
+    literal:hasLiteralValue "0000-0003-0530-4305" ;
+    datacite:usesIdentifierScheme datacite:orcid .
+
+:peroni-author a pro:RoleInTime ;
+    pro:withRole
+        pro:author ;
+    ex1:relatesToSnippet
+        <http://example.org/id1> .
+
+<http://example.org/id1>
+    ex1:type :submit-snippet ;
+    ex1:atTime :submission-time .
+
+:submit-snippet a part:Event ;
+    dcterms:description
+        "Submit a snippet for review" .
+
+ # add details about snippet, like date time, etc.
+ :submission-time a ti:TimeInterval ;
+    ti:hasIntervalStartDate
+        "2017-08-25T17:31:55Z"^^xsd:dateTime .
+
+# reviewer invited
+###########################
+
+<http://example.org/id1>
+    pso:holdsStatusInTime
+        :notification-to-reviewer .
+
+:notification-to-reviewer a part:Event ;
+    dcterms:description "Invite Tobias Kuhn to write a review"  ;
+    ex1:ServerId <http:snippet.org/id1> ;
+    ex1:SnippetId <http://example.org/id1> ;
+    .
+
+:kuhn-reviewer a pro:RoleInTime ;
+    pro:withRole pro:reviewer .
+
+# identify reviewer
+orcid:0000-0002-1267-0234 a foaf:Person ;
+    foaf:name "Tobias Kuhn" ;
+    datacite:hasIdentifier :tobiaskuhn-orcid ;
+    pro:holdsRoleInTime kuhn-reviewer .
+
+:tobiaskuhn-orcid a datacite:PersonalIdentifier ;
+    literal:hasLiteralValue "0000-0002-1267-0234" ;
+    datacite:usesIdentifierScheme datacite:orcid .
+
+
+# reviewer submits review
+###########################
+
+<http://example.org/id1>
+    pso:holdsStatusInTime
+        :submit-review .
+
+:submit-review a part:Event ;
+    dcterms:description
+        "Tobias Kuhn submitted a review" .
+
+:review-kuhn ex1:hasContent
+        "This snippet is interesting..." .
