@@ -9,15 +9,21 @@ How to model a workflow? What are the possiblities?
 
 3) Have a workflow definition: execution is possible with/without its definition
 
-Workflow definition
-* another node in the network, decouple from actual activities that are there
-* formally defined, automatically induce the rest; search for what has just happened
 
-Focus on actions that actors perform on a paper, I am not looking at the current set of actions that have already taken place
-Past and future in a decentralized manner
-Use PROV; the entity can be anything; nodes in the network to be digital ?!
-Include computational workflows as well
-Which things changed, which review had the biggest impact?
+Some ideas:
+* Workflow definition
+..* another node in the network, decouple from actual activities that are there
+..* formally defined, automatically induce the rest; search for what has just happened
 
-Ontologies in Turtle: define prefixes, declare classes and properties,
-domains and ranges, subclasses and subproperties, what you can say about properties
+* Focus on actions that actors perform on a paper, not at the current set of actions that have already taken place
+* Past and future in a decentralized manner
+* Use [PROV-O](https://www.w3.org/TR/prov-o/); the entity can be anything; do the nodes in the network need to only be digital ?!
+* Include computational workflows as well
+* Which things changed, which review had the biggest impact?
+
+Ontologies in Turtle:
+* define prefixes
+* declare classes and properties
+* declare domains and ranges
+* declare subclasses and subproperties
+* extra: what you can say about properties
