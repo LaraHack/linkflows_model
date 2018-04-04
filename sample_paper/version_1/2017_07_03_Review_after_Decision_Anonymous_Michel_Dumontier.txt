@@ -1,0 +1,125 @@
+Overall Impression: Weak
+Suggested Decision: Reject
+Technical Quality of the paper: N/A
+Presentation: Weak
+Reviewer`s confidence: High
+Significance: Moderate significance
+Background: Weak
+Novelty: N/A
+Data availability: N/A  
+Length of the manuscript: N/A
+
+Summary of paper in a few sentences:
+
+The author is submitting a position paper; I understand this to be a position statement paper, not an opinion but a paper in which the author states a position wrt to a problem of interest. However, it is not clear whether this is a position statement wrt semantic publications, or if this is a paper in which the author is presenting a framework.  If the former, then the author fails to present a coherent position. If the latter, then the author fails in presenting a framework.  Beyond these issues, there is the problem of readability. The paper is not clearly written, the English is not acceptable of publication standards, the paper is not well organized, there are typos, problems with punctuation, lack of examples, etc. In addition, it is not easy to understand the real scope of this paper, I am guessing the author is really trying to get a first impression about an idea; however, the idea is poorly presented. The problem is also not well discussed and again the paper is very disorganized –this is probably because the author is not clear as to the intention of the paper. The author should also consider the whole publication lifecycle; at the very least the author should somehow consider the publication workflow.
+
+Reasons to accept:
+
+Although the domain of the paper, semantics for scholarly papers, is interesting I really don’t think that this paper is ready to be accepted. The author needs to put some work in the paper and resubmit. This is interesting work that should be published but as it is right now it is not ready. The approach is interesting but again, it needs work before it is published.
+
+Reasons to reject:
+
+The paper lacks scope, it is difficult to read, the English doesn’t make it easy for the reader to understand the paper. The author makes quite a few unsubstantiated claims that should be better supported; there is quite a lot of literature that is not referenced in this paper and that is quite relevant. There are also commercial applications that should be analyzed against the ideas presented by the author, e.g. nature science graph, and others that I give in my review.
+
+The author is submitting a “position” paper; I understand this to be a position statement paper. However, it is not clear whether this is a position statement wrt semantic publications, or if this is a paper in which the author is presenting a framework.  If the former, then the author fails to present a coherent position. If the latter, then the author fails in presenting a framework.  Beyond these issues, there is the problem of readability. The paper is not clearly written, the English is not acceptable of publication standards, the paper is not well organized, there are typos, problems with punctuation, etc. In addition, it is not easy to understand the real scope of this paper, I am guessing the author is really trying to get a first impression about an idea; however, the idea is poorly presented. The problem is also not well discussed and again the paper is very disorganized –this is probably because the author is not clear as to the intention of the paper.
+
+The author touches on semantic publications but does not contextualize the work within any publication workflow. How are we getting there? Is this an approach that will work only for new publications that are born within the idea/framework/context that the author is presenting?
+
+The author does not seem to be well aware of current publication platforms that are doing many of the things that he is describing; to name but a few: https://science.ai/overview, the work at elife labs with lens and R markdown, semantics for Jupiter notebooks, nature science graph, Cochrane linked data, ZPID linked data. There is Biotea, this is somehow doing just what the author is describing. Also, close to the Biotea experience there is “Semantator: Semantic annotator for converting biomedical text to linked data”. There are more examples of work seeking to add semantics to publications. Some address the problem for existing publications; some other authors are working on solutions for novel publications. Either way, all of that is relevant for the work the author is trying to do. 
+
+There is annotation and NLP written all over the work presented in this paper; something the author is not clear about. For instance, automatic annotation is not perfect, far from it; also, there is a lot ambiguity in domain ontologies –ambiguity that is inherited by the annotations. Has the author considered any of these in his approach? Moreover, if the author is going for reasoning over several annotations from various ontologies then I would like to see a really convincing case. SNOMED and MEDRA, ChEBI and PubCHEM illustrate how this is difficult and may lead to contradictions. A running example could do a lot for this paper. In addition, it is not clear if the author is talking about annotation as NER or annotation using NLP pipelines; in any case, neither one of them gives 100%, so one has to also consider human annotation. If human annotation is involved then what could the task look like? What quality parameters (e.g. inter-annotation agreement) should be considered, will the annotations be part of the semantic layer of the paper or will this be an additional payer somehow attached/related to the paper?
+
+From the authors:
+
+In recent experiments colleagues and I have done in the context of the SAVE-SD workshops, described in [8], the clear trend is that, beside a few who actually believe in the Semantic Publishing and even if we made available appropriate incentives (i.e. prizes) for people submitting HTML+RDF scholarly papers, generally only a very low number of semantic statements (if none at all) is specified by the authors. Possible reasons for this behaviour could be the lack of appropriate support (e.g. graphical user interfaces) for facilitating the authors in the annotation of scholarly works with semantic data.”
+
+What is the incentive for the author? Shouldn’t this be the replacement of the typesetting in the publication workflow? Is there a benchmark for tools that can automate the process? Adding the semantics, what advantages? What incentives? When in the publication workflow? Whose work is this? From my experience running a workshop addressing issues in semantics in scientific publications I could see how these are issues that need clarity for everyone. These issues are also related to author's available time, nowbody invests time and effort without first knowing why, what for, and how.
+
+Also from the authors
+
+…but rather to have services that do it for them in an automatic fashion by parsing somehow the content that the authors have already written, thus by reducing the entire time spent by them to few clicks for adding the semantic annotations…
+
+sure, this has been addressed in the past by many authors but… it has also been said that automatic annotation has quite a few problems. The accuracy of the annotation and also the quality of ontologies and also the fact that these annotations will come from several ontologies and this leads to the problem of reasoning over multiple overlapping ontologies that mostly likely will bear contradictions. If the author is talking about human annotation then again, there are quite a few issues to address and investigate before doing it. Mark2cure has had relative success but they work in an overly scoped domain with an overly scoped annotation task. Also, how are u planning to define the annotation workflows involving humans and software?
+
+From the authors
+
+“…For instance, one can consider more important to have all the citations in a paper described according to their functions (i.e. the reasons why an author has cited other works), while others can consider more functional to have a formal description of the main argumentative claim of the paper with its evidences…”
+
+This is really interesting but also poorly charted territory in which lots of authors have not really succeeded in the past. Is the author advocating human annotation for the identification of function of the citation or is this some sort of sentiment analysis kind of automated task?
+
+From the authors
+
+“…the SPAR Extractor Suite developed for the RASH format…”
+
+Interesting, I have checked the SPAR ontologies and as ontologies they model some of this. However, I could not find the SPAR extractor suite.
+
+Fred is limited; it is yet unclear how could FRED be applied to a wider context than that described by the authors.
+
+From the authors
+
+“…scholarly documents can be written in different natural languages..“
+
+Do u mean different languages as in English, Italian, Spanish? Or do u mean different narrative structures? If the latter then, what are the narrative structures most commonly used in scientific literature? This has already been studied before.
+
+From the authors
+
+“The idea is that each of these syntactic/structural/semantic aspects, that we would like to arise starting from a pure syntactic organisation of document markup, can be defined in fact as standalone languages (e.g. by means of ontologies) with their proper compositional rules and functions.”
+
+Once again, the author needs examples everywhere.
+
+From the authors
+
+“…the main constituents they contain are in fact shared among the whole scholarly communication domain...... My hypothesis is that such ways are shared somehow between the various research areas.
+
+….:”
+
+The whole paragraph is really complicated. As just opinions it is fine. For a position statement paper I would expect to see this very well supported. As a paper in which the author is presenting a framework, this needs a lot of work.
+
+From the authors
+
+[hierarchical markup] the sources of the scholarly article are available according to (or can be easily converted into) a document markup language that is appropriate for conveying the typical hierarchical containment proper to scholarly documents (e.g. body > section > paragraph);
+[language agnosticism] there is no need of having a prior knowledge about the particular natural language used for writing the scholarly article;
+[layer interdependency] a layer describing a particular conceptualisation of the components of scholarly documents is dependent somehow on the conceptualisation of at least another lower- or higher-level layer;
+[inter-domain reuse] several of the structural and semantic aspects typically described in scholarly articles are shared across various research domains;
+[intra-domain reuse] scholarly documents of a specific domain always share several structural and semantic aspects between them, even if such aspects are not implicitly adopted by other external domains.
+Ok. Lets start by saying that strictly speaking these are not hypothesis. Consider writing these a problem statements, research questions or outright hypothesis.
+
+The body>section>paragraph I don’t understand. Everything else in these points is really arguable and needs better backup in the form of references that really support these as assertions. For instance, “there is not need of having a prior…..” perhaps an example could come in handy. The author should focus on a particular domain, select a well-defined corpus of documents and elaborate from there on.
+
+ 
+
+From the author
+
+“…Intuitively, following the sketch illustrated in Figure 1, starting from a low-level definition of the structure of an article, e.g. the organisation of the XML elements that have been used to describe its content (layer 1), it is possible to create rules that describe each XML element according to more general compositional patterns depicting its structures that oblige a specific implicit and unmentioned organisation of the article content (layer 2) – e.g. the fact that there an element can behaves like a block or an inline item. Again, starting from the definitions in the first two layers, it would be possible to characterise the semantics of each XML element according to fixed categories defining its structural behaviour, e.g. paragraph, section, table, figure, etc. (layer 3). Along the same lines, starting from the aforementioned layers, it would be possible to derive the rhetorical organisation of a scholarly paper, e.g. identifying the argumentative role of each section introduced in such paper such as introduction, methods, material, experiment, data, results, conclusions, etc. (layer 4). And so on and so forth.”
+
+ 
+
+This is, IMHO, the most interesting paragraph of the paper. However, the lack of an example just diminishes its importance. Also, the way it is written makes it seem like a lot of opinions. Once again, if this is a position statement paper I would consider this to be part of the overall position. But, even as a position statement the author needs to give the reader more than just his word for unsubstantiated claims.
+
+ 
+
+From the Authors
+
+syntactic containment (ontology: EARMARK [14]) – describing the dominance and containment relations [19] that exist between the various elements and attributes included in the XML sources of scholarly articles (e.g. the fact that a certain element X is contained in another element Y);
+syntactic structures (ontology: Pattern Ontology [15]) – starting from the previous layer, inferring the particular structural pattern to which each XML element is compliant with (e.g. the fact that all the elements X behave as inline elements, while the elements Y behave as blocks);
+structural semantics (ontology: DoCO [16]) – using the particular pattern-element specification provided by the previous layer, extrapolating general rules for the pattern-based composition of article structures (e.g. sections, paragraphs, tables, figures);
+rhetorical components (ontology: DEO [16]) – by means of the organisation of the structural components obtained in the previous layer, inferring their rhetorical functions, so as to clearly characterise sections with a specific behaviour (e.g. introduction, methods, material, data, results, conclusions);
+citation functions (ontology: CiTO [17]) – using the outcomes of the previous two layers, assigning the appropriate citation function to each occurrence of a citation in a scholarly articles (e.g. by specifying the function uses method infor all the citations included in the method section);
+argumentative organisation (ontology: AMO) – analysing the various semantic characterisation of the previous layers, creating relations among the various components of scholarly articles by using specific argumentative models such as Toulmin's [20];
+article categorisation (ontology: FaBiO [17]) – by looking to the ways document components are organised structurally and argumentatively, annotating each scholarly paper with the appropriate type (e.g. research paper, journal article, review, conference paper, demonstration paper, poster, opinion, report);
+discipline clustering (ontology: DBpedia Ontology [18]) – understanding to which scholarly discipline each paper belong to by looking at the various characterisations that have been associated to each paper in the previous layers.
+ 
+
+This is fine, but… ontologies are just models and data talks lauder than words. So, in order to convince me I need to see data, not just models; along with data I would like to see tested data. If just ontologies then at the very least I would like to see instantiated ontologies so that data tells me how you are right. Once again… I need a running example in this paper, I would like to author to focus on a clear message, I would like this paper to be much better articulated. The large number of self-citations are not helping the author in making a clear case –his own previously published papers may arise further evaluation under the light of his claims in this paper. Also, there are lots of papers that should be cited here and that are missing.  His section “from structural patterns to structural semantics” indicates me that it is quite simply easier to map JATS/XML elements to ontologies (bearing in mind minimal ontological commitment) rather than embracing many of the things the author seems to embrace. The text that usually follows the e.g. is not enough explanatory; again a running example could help the author to make his case.
+
+ 
+
+From the author
+
+…” additional studies and tests are needed for having more robust outcomes…”
+
+ 
+
+Yes, like for example?
+
+The tittle reads funny, the author should consider making it closer to the content of the paper. Also, the analogy ised in this paper needs some work. I don’t see how it is relevant.

@@ -1,0 +1,85 @@
+/* Comment */
+.h {
+    background-color: rgba(255,255,0,0.3);
+}
+
+/* Move down */
+.d {
+    background-color: rgba(255,0,0,0.3);
+}
+.d:after {
+    content: "↓";
+    color: white;
+    background-color: red;
+    margin-left:3px;
+    position: relative;
+    top: -2px;
+    padding: 0px 1px 4px 1px;
+    border:1px solid grey;
+}
+
+/* Move up */
+.u {
+    background-color: rgba(255,0,0,0.3);
+}
+.u:after {
+    content: "↑";
+    color: white;
+    background-color: red;
+    margin-left:3px;
+    position: relative;
+    top: -2px;
+    padding: 0px 1px 4px 1px;
+    border:1px solid grey;
+}
+
+/* TODO */
+.t {
+    color: red;
+    font-weight: bold;
+}
+.t:before {
+    content: " TODO: ";
+}
+.t:after {
+    content: " ";
+}
+
+/* Justify */
+.j {
+    background-color: rgba(0,0,255,0.3);
+}
+.j:after {
+    content: "justify";
+    color: white;
+    background-color: blue;
+    margin-left:3px;
+    padding: 2px;
+    border:1px solid grey;
+}
+
+/* Remove */
+.r {
+    background-color: rgba(0,255,0,0.3);
+}
+.r:after {
+    content: "remove";
+    color: white;
+    background-color: green;
+    margin-left:3px;
+    padding: 2px;
+    border:1px solid grey;
+}
+
+/* Missing reference */
+.mr {
+    background-color: rgba(95,158,160,0.3);
+}
+.mr:after {
+    content: "missing reference";
+    color: white;
+    background-color: CadetBlue;
+    margin-left:3px;
+    padding: 2px;
+    border:1px solid grey;
+}

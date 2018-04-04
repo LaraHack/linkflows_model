@@ -1,0 +1,400 @@
+@prefix amo: <http://www.essepuntato.it/2011/02/argumentmodel/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix ns1: <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix schema: <http://schema.org/> .
+@prefix scoro: <http://purl.org/spar/scoro/> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#main-argument-backing-1> a amo:Backing;
+    dcterms:requires <https://doi.org/10.1002/asi.23088>;
+    amo:backs <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#main-argument-warrant> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#main-argument-backing-2> a amo:Backing;
+    dcterms:requires <https://doi.org/10.1145/2494266.2494319>;
+    amo:backs <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#main-argument-warrant> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#main-argument-evidence1> a amo:Evidence;
+    dcterms:description "in a community (e.g., a conference or a journal) that specifies the use of a very extensive, permissive, and non-pattern-based markup language, the large majority of authors use a pattern-based subset of such language for writing their scholarly documents;"@en;
+    amo:proves <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#main-argument-claim>;
+    amo:supports <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#main-argument-warrant> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#main-argument-evidence2> a amo:Evidence;
+    dcterms:description "only a small number of pattern-based documents coming from different communities (written by different authors in different formats) is needed for automatically generate qualitatively good and generic syntactical visualisation for all documents included in all the communities in consideration."@en;
+    amo:proves <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#main-argument-claim>;
+    amo:supports <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#main-argument-warrant> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#main-argument-evidence3> a amo:Evidence;
+    dcterms:description "only a small number of pattern-based documents of a community (written by different authors) is needed for extracting the structural semantics of the main components of all the documents included in a particular community."@en;
+    amo:proves <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#main-argument-claim>;
+    amo:supports <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#main-argument-warrant> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#main-argument-qualifier> a amo:Qualifier;
+    dcterms:description "good margin of success"@en;
+    amo:forces <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#main-argument-claim> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#reference-list> a doco:BibliographicReferenceList;
+    frbr:part <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#bagnacani2014>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#bernardi2002>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#bernerslee2001>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#bos2008>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#constantin2016>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#cyganiak2014>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#diiorio2011>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#diiorio2014>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#diriorio2013>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#gangemi2017>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#groth2010>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#howard1980>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#lehmann2015>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#montague1970>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#peroni2012>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#peroni2016>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#shotton2009>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#shotton2009_2>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#sperbergmcqueen2004>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#teiconsortium2016>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#teufel2006>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#toulmin1958>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#walsh2010>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#wilkinson2016> .
+
+<http://orcid.org/0000-0003-0530-4305> a foaf:Person;
+    frapo:hasORCID "0000-0003-0530-4305";
+    pro:holdsRoleInTime <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#affiliation>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#author>;
+    schema:affiliation <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#dasplab>;
+    schema:email "silvio.peroni@unibo.it";
+    schema:name "Silvio Peroni" .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html> a fabio:JournalArticle;
+    prism:keyword "CISE"@en,
+        "Curry-Howard Isomorphism"@en,
+        "Genuine Semantic Publishing"@en,
+        "Principle of Compositionality"@en,
+        "Semantic Publishing"@en,
+        "Structural Patterns"@en,
+        "Structural Semantics"@en;
+    dcterms:creator <http://orcid.org/0000-0003-0530-4305>;
+    dcterms:title "Automating the Semantic Publishing -- Applying a format-independent and language-agnostic approach for the compositional and iterative semantic enhancement of scholarly articles"@en;
+    frbr:part <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#abstract>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#cise>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#conclusions>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#evidence>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#introduction>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#pathway>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#references> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#abstract> a doco:Abstract,
+        doco:Section;
+    dcterms:title "Abstract"@en;
+    ns1:role ns1:doc-abstract .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#affiliation> a pro:RoleInTime;
+    pro:relatesToOrganization <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#dasplab>;
+    pro:withRole scoro:affiliate .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#author> a pro:RoleInTime;
+    pro:relatesToDocument <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html>;
+    pro:withRole pro:author .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#bagnacani2014-p1> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#bagnacani2014> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#bernardi2002-p1> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#bernardi2002> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#bernerslee2001-p1> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#bernerslee2001> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#bos2008-p1> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#bos2008> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#cise> a deo:Contribution,
+        doco:Section;
+    dcterms:title "Compositional and iterative semantic enhancement of scholarly articles"@en .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#conclusions> a deo:Conclusion,
+        doco:Section;
+    dcterms:title "Conclusions"@en .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#constantin2016-p1> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#constantin2016> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#constantin2016-p2> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#constantin2016> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#constantin2016-p3> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#constantin2016> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#cyganiak2014-p1> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#cyganiak2014> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#diiorio2011-p1> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#diiorio2011> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#diiorio2011-p2> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#diiorio2011> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#diiorio2014-p1> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#diiorio2014> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#diiorio2014-p2> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#diiorio2014> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#diiorio2014-p3> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#diiorio2014> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#diriorio2013-p1> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#diriorio2013> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#evidence> a deo:Evaluation,
+        doco:Section;
+    dcterms:title "First evidences and future directions"@en;
+    frbr:part <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#constantin2016-p1>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#constantin2016-p2>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#constantin2016-p3>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#diiorio2011-p1>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#diiorio2011-p2>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#diiorio2014-p1>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#diiorio2014-p2>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#diiorio2014-p3>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#diriorio2013-p1>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#lehmann2015-p1>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#peroni2012-p1>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#peroni2012-p2>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#sperbergmcqueen2004-p1>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#teiconsortium2016-p1>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#teufel2006-p1>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#toulmin1958-p1>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#walsh2010-p1>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#walsh2010-p2> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#gangemi2017-p1> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#gangemi2017> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#gangemi2017-p2> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#gangemi2017> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#groth2010-p1> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#groth2010> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#howard1980-p1> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#howard1980> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#howard1980-p2> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#howard1980> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#introduction> a deo:Introduction,
+        doco:Section;
+    dcterms:title "Print, Digital, and Semantic Publishing"@en;
+    frbr:part <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#bagnacani2014-p1>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#bernerslee2001-p1>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#cyganiak2014-p1>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#gangemi2017-p1>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#groth2010-p1>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#howard1980-p1>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#peroni2016-p1>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#peroni2016-p2>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#shotton2009-p1>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#shotton2009_2-p1>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#wilkinson2016-p1> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#lehmann2015-p1> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#lehmann2015> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#montague1970-p1> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#montague1970> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#pathway> a deo:RelatedWork,
+        doco:Section;
+    dcterms:title "A pathway from syntax to semantics"@en;
+    frbr:part <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#bernardi2002-p1>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#bos2008-p1>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#gangemi2017-p2>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#howard1980-p2>,
+        <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#montague1970-p1> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#peroni2012-p1> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#peroni2012> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#peroni2012-p2> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#peroni2012> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#peroni2016-p1> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#peroni2016> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#peroni2016-p2> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#peroni2016> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#references> a doco:Bibliography,
+        doco:Section;
+    ns1:role ns1:doc-bibliography .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#shotton2009-p1> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#shotton2009> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#shotton2009_2-p1> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#shotton2009_2> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#sperbergmcqueen2004-p1> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#sperbergmcqueen2004> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#teiconsortium2016-p1> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#teiconsortium2016> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#teufel2006-p1> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#teufel2006> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#toulmin1958-p1> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#toulmin1958> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#walsh2010-p1> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#walsh2010> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#walsh2010-p2> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#walsh2010> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#wilkinson2016-p1> a c4o:InTextReferencePointer;
+    c4o:denotes <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#wilkinson2016> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#bagnacani2014> a deo:BibliographicReference;
+    biro:references <https://doi.org/10.1007/978-3-319-17966-7_10>;
+    c4o:hasContent "Andrea Bagnacani, Paolo Ciancarini, Angelo Di Iorio, Andrea Giovanni Nuzzolese, Silvio Peroni, Fabio Vitali (2014). The Semantic Lancet Project: A Linked Open Dataset for Scholarly Publishing. In EKAW (Satellite Events) 2014: 101-105. DOI: https://doi.org/10.1007/978-3-319-17966-7_10"@en;
+    ns1:role ns1:doc-biblioentry .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#bernardi2002> a deo:BibliographicReference;
+    biro:references <http://disi.unitn.it/~bernardi/Papers/thesis-chapter1.pdf>;
+    c4o:hasContent "Raffaella Bernardi (2002). The Logical Approach in Linguistics. In Reasoning with Polarity in Categorial Type Logic. Ph. D. Thesis, Utrecht University. http://disi.unitn.it/~bernardi/Papers/thesis-chapter1.pdf (last visited May 30, 2017)"@en;
+    ns1:role ns1:doc-biblioentry .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#bernerslee2001> a deo:BibliographicReference;
+    biro:references <https://doi.org/10.1038/scientificamerican0501-34>;
+    c4o:hasContent "Tim Berners-Lee, James Hendler, Ora Lassila (2001). The Semantic Web. Scientific American, 285 (5): 34-43. DOI: https://doi.org/10.1038/scientificamerican0501-34"@en;
+    ns1:role ns1:doc-biblioentry .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#bos2008> a deo:BibliographicReference;
+    biro:references <https://doi.org/10.3115/1626481.1626503>;
+    c4o:hasContent "Johan Bos (2008). Wide-Coverage Semantic Analysis with Boxer. In Proceedings of the 2008 Conference on Semantics in Text Processing (STEP 2008): 277-286. DOI: https://doi.org/10.3115/1626481.1626503"@en;
+    ns1:role ns1:doc-biblioentry .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#cyganiak2014> a deo:BibliographicReference;
+    biro:references <https://www.w3.org/TR/rdf11-concepts/>;
+    c4o:hasContent "Richard Cyganiak, David Wood, Markus Lanthaler (2014). RDF 1.1 Concepts and Abstract Syntax. W3C Recommendation 25 February 2014. https://www.w3.org/TR/rdf11-concepts/"@en;
+    ns1:role ns1:doc-biblioentry .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#dasplab> a foaf:Organization;
+    schema:name "Digital And Semantic Publishing Laboratory, Department of Computer Science and Engineering, University of Bologna, Bologna, Italy";
+    foaf:homepage <http://dasplab.cs.unibo.it> .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#diriorio2013> a deo:BibliographicReference;
+    biro:references <https://doi.org/10.1145/2494266.2494319>;
+    c4o:hasContent "Angelo Di Iorio, Silvio Peroni, Francesco Poggi, Fabio Vitali, David Shotton (2013). Recognising document components in XML-based academic articles. In Proceedings of the 2013 ACM Symposium on Document Engineering (DocEng 2013): 181-184. DOI: https://doi.org/10.1145/2494266.2494319"@en;
+    ns1:role ns1:doc-biblioentry .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#groth2010> a deo:BibliographicReference;
+    biro:references <https://doi.org/10.3233/ISU-2010-0613>;
+    c4o:hasContent "Paul Groth, Andrew Gibson, Jan Velterop (2010). The anatomy of a nanopublication. Information Services and Use, 30 (1-2): 51-56. DOI: https://doi.org/10.3233/ISU-2010-0613"@en;
+    ns1:role ns1:doc-biblioentry .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#lehmann2015> a deo:BibliographicReference;
+    biro:references <https://doi.org/10.3233/SW-140134>;
+    c4o:hasContent "Jens Lehmann, Robert Isele, Max Jakob, Anja Jentzsch, Dimitris Kontokostas, Pablo N. Mendes, Sebastian Hellmann, Mohamed Morsey, Patrick van Kleef, Sören Auer, Christian Bizer (2015). DBpedia - A large-scale, multilingual knowledge base extracted from Wikipedia. Semantic Web, 6 (2): 167-195. DOI: https://doi.org/10.3233/SW-140134"@en;
+    ns1:role ns1:doc-biblioentry .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#montague1970> a deo:BibliographicReference;
+    biro:references <https://doi.org/10.1111/j.1755-2567.1970.tb00434.x>;
+    c4o:hasContent "Richard Montague (1970). Universal grammar. Theoria, 36 (3): 373-398. DOI: https://doi.org/10.1111/j.1755-2567.1970.tb00434.x"@en;
+    ns1:role ns1:doc-biblioentry .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#shotton2009> a deo:BibliographicReference;
+    biro:references <https://doi.org/10.1087/2009202>;
+    c4o:hasContent "David Shotton (2009). Semantic publishing: the coming revolution in scientific journal publishing. Learned Publishing, 22 (2): 85-94. DOI: https://doi.org/10.1087/2009202"@en;
+    ns1:role ns1:doc-biblioentry .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#shotton2009_2> a deo:BibliographicReference;
+    biro:references <https://doi.org/10.1371/journal.pcbi.1000361>;
+    c4o:hasContent "David Shotton, Katie Portwin, Graham Klyne, Alistair Miles (2009). Adventures in Semantic Publishing: Exemplar Semantic Enhancements of a Research Article. PLoS Computational Biology, 5 (4). DOI: https://doi.org/10.1371/journal.pcbi.1000361"@en;
+    ns1:role ns1:doc-biblioentry .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#sperbergmcqueen2004> a deo:BibliographicReference;
+    biro:references <https://doi.org/10.1007/978-3-540-39916-2_12>;
+    c4o:hasContent "Michael Sperberg-McQueen, Claus Huitfeldt (2004). GODDAG: A Data Structure for Overlapping Hierarchies. In Proceedings of the 5th International Workshop on Principles of Digital Document Processing (PODDP 2000): 139-160. DOI: https://doi.org/10.1007/978-3-540-39916-2_12"@en;
+    ns1:role ns1:doc-biblioentry .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#teiconsortium2016> a deo:BibliographicReference;
+    biro:references <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/>;
+    c4o:hasContent "Text Encoding Initiative Consortium (2016). TEI P5: Guidelines for Electronic Text Encoding and Interchange. http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ (last visited May 30, 2017)"@en;
+    ns1:role ns1:doc-biblioentry .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#teufel2006> a deo:BibliographicReference;
+    biro:references <https://doi.org/10.3115/1610075.1610091>;
+    c4o:hasContent "Simone Teufel, Advaith Siddharthan, Dan Tidhar (2006). Automatic classification of citation function. In Proceedings of the 2006 Conference on Empirical Methods in Natural Language Processing (EMNLP 2006): 103-110. DOI: https://doi.org/10.3115/1610075.1610091"@en;
+    ns1:role ns1:doc-biblioentry .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#toulmin1958> a deo:BibliographicReference;
+    biro:references <http://johnnywalters.weebly.com/uploads/1/3/3/5/13358288/toulmin-the-uses-of-argument_1.pdf>;
+    c4o:hasContent "Stephen Toulmin (1958). The uses of argument. Cambridge, Cambridge University Press. ISBN: 9780521827485. http://johnnywalters.weebly.com/uploads/1/3/3/5/13358288/toulmin-the-uses-of-argument_1.pdf (last visited May 30, 2017)"@en;
+    ns1:role ns1:doc-biblioentry .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#wilkinson2016> a deo:BibliographicReference;
+    biro:references <https://doi.org/10.1038/sdata.2016.18>;
+    c4o:hasContent "Mark D. Wilkinson, Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, Jan-Willem Boiten, Luiz Bonino da Silva Santos, Philip E. Bourne, Jildau Bouwman, Anthony J. Brookes, Tim Clark, Mercè Crosas, Ingrid Dillo, Olivier Dumon, Scott Edmunds, Chris T. Evelo, Richard Finkers, Alejandra Gonzalez-Beltran, Alasdair J.G. Gray, Paul Groth, Carole Goble, Jeffrey S. Grethe, Jaap Heringa, Peter A.C ’t Hoen, Rob Hooft, Tobias Kuhn, Ruben Kok, Joost Kok, Scott J. Lusher, Maryann E. Martone, Albert Mons, Abel L. Packer, Bengt Persson, Philippe Rocca-Serra, Marco Roos, Rene van Schaik, Susanna-Assunta Sansone, Erik Schultes, Thierry Sengstag, Ted Slater, George Strawn, Morris A. Swertz, Mark Thompson, Johan van der Lei, Erik van Mulligen, Jan Velterop, Andra Waagmeester, Peter Wittenburg, Katherine Wolstencroft, Jun Zhao, Barend Mons (2016). The FAIR Guiding Principles for scientific data management and stewardship. Scientific Data 3. DOI: https://doi.org/10.1038/sdata.2016.18"@en;
+    ns1:role ns1:doc-biblioentry .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#diiorio2011> a deo:BibliographicReference;
+    biro:references <https://doi.org/10.1002/asi.21591>;
+    c4o:hasContent "Angelo Di Iorio, Silvio Peroni, Fabio Vitali (2011). A Semantic Web approach to everyday overlapping markup. Journal of the American Society for Information Science and Technologies, 62 (9): 1696-1716: DOI: https://doi.org/10.1002/asi.21591"@en;
+    ns1:role ns1:doc-biblioentry .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#gangemi2017> a deo:BibliographicReference;
+    biro:references <https://doi.org/10.3233/SW-160240>;
+    c4o:hasContent "Aldo Gangemi, Valentina Presutti, Diego Reforgiato Recupero, Andrea Giovanni Nuzzolese, Francesco Draicchio, Misael Mongiovì. (2017). Semantic Web, 8 (6). DOI: https://doi.org/10.3233/SW-160240"@en;
+    ns1:role ns1:doc-biblioentry .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#howard1980> a deo:BibliographicReference;
+    biro:references <http://www.dcc.fc.up.pt/~acm/howard.pdf>;
+    c4o:hasContent "William A. Howard (1980). The formulae-as-types notion of construction. In Jonathan P. Seldin, J. Roger Hindley, To H.B. Curry: Essays on Combinatory Logic, Lambda Calculus and Formalism: 479-490. Boston, MA: Academic Press. ISBN: 978-0-12-349050-6. http://www.dcc.fc.up.pt/~acm/howard.pdf (last visited May 30, 2017)"@en;
+    ns1:role ns1:doc-biblioentry .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#peroni2012> a deo:BibliographicReference;
+    biro:references <https://doi.org/10.1016/j.websem.2012.08.001>;
+    c4o:hasContent "Silvio Peroni, David Shotton (2012). FaBiO and CiTO: Ontologies for describing bibliographic resources and citations. Web Semantics, 17: 33-43. DOI: https://doi.org/10.1016/j.websem.2012.08.001"@en;
+    ns1:role ns1:doc-biblioentry .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#peroni2016> a deo:BibliographicReference;
+    biro:references <https://doi.org/10.7287/peerj.preprints.2513>;
+    c4o:hasContent "Silvio Peroni, Francesco Osborne, Angelo Di Iorio, Andrea Giovanni Nuzzolese, Francesco Poggi, Fabio Vitali, Enrico Motta (2016). Research Articles in Simplified HTML: a Web-first format for HTML-based scholarly articles. PeerJ PrePrints 4: e2513. DOI: https://doi.org/10.7287/peerj.preprints.2513"@en;
+    ns1:role ns1:doc-biblioentry .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#walsh2010> a deo:BibliographicReference;
+    biro:references <http://tdg.docbook.org/tdg/5.0/docbook.html>;
+    c4o:hasContent "Norman Walsh (2010). DocBook 5: The Definitive Guide. Sebastopol, O'Really Media. ISBN: 9780596805029. http://tdg.docbook.org/tdg/5.0/docbook.html (last visited May 30, 2017)"@en;
+    ns1:role ns1:doc-biblioentry .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#constantin2016> a deo:BibliographicReference;
+    biro:references <https://doi.org/10.3233/SW-150177>;
+    c4o:hasContent "Alexandru Constantin, Silvio Peroni, Steve Pettifer, David M. Shotton, Fabio Vitali (2016). The Document Components Ontology (DoCO). Semantic Web, 7 (2): 167-181. DOI: https://doi.org/10.3233/SW-150177"@en;
+    ns1:role ns1:doc-biblioentry .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#diiorio2014> a deo:BibliographicReference;
+    biro:references <https://doi.org/10.1002/asi.23088>;
+    c4o:hasContent "Angelo Di Iorio, Silvio Peroni, Francesco Poggi, Fabio Vitali (2014). Dealing with structural patterns of XML documents. Journal of the Association for Information Science and Technologies, 65 (9): 1884-1900. DOI: https://doi.org/10.1002/asi.23088"@en;
+    ns1:role ns1:doc-biblioentry .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#main-argument-claim> a amo:Claim;
+    dcterms:description "it is possible to develop and implement a mechanism that enables the automatic enhancement of scholarly papers – independently from the markup used for storing them and the natural language used for writing their content – by means of an iterative process composed by several steps, where each step is responsible for providing additional semantic connotations of the document components included in such scholarly papers by combining the enhancements obtained as outcomes of the previous steps according to precise rules"@en .
+
+<https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#main-argument-warrant> a amo:Warrant;
+    dcterms:description "some experiments have been run in the past and, according to their outcomes, they suggest that the approach proposed in this article can be implemented"@en;
+    amo:leadsTo <https://w3id.org/people/essepuntato/papers/cise-datascience2017.html#main-argument-claim> .
+
+
