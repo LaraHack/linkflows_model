@@ -1,0 +1,2 @@
+- what about the DOI for the previous versions?
+Maybe something like relatesToDocument: DOIxxx

@@ -12,6 +12,9 @@
 @prefix part: <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#> .
 @prefix ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
 
+# change this to proper URL
+@prefix snp: <http://linkflows.com/snippets/> .
+
 # submission
 ###########################
 
@@ -30,8 +33,8 @@ orcid:0000-0003-0530-4305 a foaf:Person ;
         pro:author ;
     pro:relatesToDocument
         <http://dx.doi.org/10.3233/DS-170012>
-    ex1:relatesToSnippet
-        <http://example.org/id1> .
+    snp:snippetURI
+        <http://../sample_paper/snippets/camera-ready/meta.ttl> .
 
 <http://example.org/id1>
     ex1:type :submit-snippet ;

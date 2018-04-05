@@ -1,4 +1,5 @@
 @prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -9,22 +10,25 @@
 # change this to proper URL
 @prefix snp: <http://linkflows.com/snippets/> .
 
-<http://dx.doi.org/10.3233/DS-170012> a fabio:JournalArticle ;
-  prov:wasDerivedFrom :version_1 ;
+<http://dx.doi.org/10.3233/DS-170012>
+  a prov:Entity, a fabio:JournalArticle ;
+  prov:wasDerivedFrom :version_2 ;
   dcterms:title "Automating Semantic Publishing" ;
   dcterms:creator <http://orcid.org/0000-0003-0530-4305> ;
   dcterms:language "en" ;
   prism:keywords
-    "Semantic Publishing" ,
-    "CISE" ,
-    "Genuine Semantic Publishing" ,
-    "Structural Patterns" ,
-    "Structural Semantics" ,
-    "Curry-Howard Isomorphism" ,
-    "Principle of Compositionality" .
+    "semantic publishing" ,
+    "compositional and iterative semantic enhancement" ,
+    "CSIE" ,
+    "principle of compositionality" ,
+    "downward causation" ,
+    "syntactic containment" ,
+    "structural patterns" ,
+    "structural semantics" ,
+    "rhetorical components" .
 
-:version_1
-  a prov:Entity, snp:snippetURI <http://../sample_paper/snippets/version_1/meta.ttl> ;
+:version_2
+  a prov:Entity, snp:snippetURI <http://../sample_paper/snippets/version_2/meta.ttl> ;
 
 <http://orcid.org/0000-0003-0530-4305> a foaf:Person ;
   foaf:name "Silvio Peroni" ;

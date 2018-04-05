@@ -6,11 +6,7 @@
 @prefix pro: <http://purl.org/spar/pro/> .
 @prefix scoro: <http://purl.org/spar/scoro/> .
 
-# change this to proper URL
-@prefix snp: <http://linkflows.com/snippets/> .
-
 <http://dx.doi.org/10.3233/DS-170012> a fabio:JournalArticle ;
-  prov:wasDerivedFrom :version_1 ;
   dcterms:title "Automating Semantic Publishing" ;
   dcterms:creator <http://orcid.org/0000-0003-0530-4305> ;
   dcterms:language "en" ;
@@ -22,9 +18,6 @@
     "Structural Semantics" ,
     "Curry-Howard Isomorphism" ,
     "Principle of Compositionality" .
-
-:version_1
-  a prov:Entity, snp:snippetURI <http://../sample_paper/snippets/version_1/meta.ttl> ;
 
 <http://orcid.org/0000-0003-0530-4305> a foaf:Person ;
   foaf:name "Silvio Peroni" ;
