@@ -75,3 +75,7 @@
     dcterms:bibliographicCitation
         "A. Bagnacani, P. Ciancarini, A. Di Iorio, A.G. Nuzzolese, S. Peroni and F. Vitali, The semantic lancet project: A linked open dataset for scholarly publishing, in: EKAW (Satellite Events) 2014, (2014) , pp. 101–105." ;
     biro:references <http://dx.doi.org/10.1007/978-3-319-17966-7_10> .
+
+:berners-lee01 a biro:BibliographicReference ;
+    dcterms:bibliographicCitation <http://../sample_paper/snippets/camera-ready/ref_2.txt>;
+    biro:references <http://dx.doi.org/10.1038/scientificamerican0501-34> .
