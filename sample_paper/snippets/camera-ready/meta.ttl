@@ -1,5 +1,5 @@
-@prefix fabio: <http://purl.org/spar/fabio/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -11,8 +11,9 @@
 @prefix snp: <http://linkflows.com/snippets/> .
 
 <http://dx.doi.org/10.3233/DS-170012>
-  a prov:Entity, a fabio:JournalArticle ;
+  a prov:Entity ;
   prov:wasDerivedFrom :version_2 ;
+  a fabio:JournalArticle ;
   dcterms:title "Automating Semantic Publishing" ;
   dcterms:creator <http://orcid.org/0000-0003-0530-4305> ;
   dcterms:language "en" ;

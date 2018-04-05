@@ -1,0 +1,33 @@
+# change this to proper URLs
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix : <http://linkflows.com/sample_paper/> .
+
+:sample_paper a fabio:JournalArticle ;
+    po:contains
+        :front-matter ,
+        :body-matter ,
+        :back-matter ;
+    co:firstItem [
+        co:itemContent :front-matter ;
+        co:nextItem [
+            co:itemContent :body-matter ;
+            co:nextItem [
+                co:itemContent :back-matter ] ] ] .
+
+:body-matter a doco:BodyMatter ;
+    po:contains
+        :section-introduction ,
+        :section-related-work ,
+        :section-document-components ,
+        :section-adoption ,
+        :section-conclusions ;
+    co:firstItem [
+        co:itemContent :section-introduction ;
+        co:nextItem [
+            co:itemContent :section-related-work ;
+            co:nextItem [
+                co:itemContent :section-document-components ;
+                co:nextItem [
+                    co:itemContent :section-adoption ;
+                    co:nextItem [
+                        co:itemContent :section-conclusions ] ] ] ] ] .

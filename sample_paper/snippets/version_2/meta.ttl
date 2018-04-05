@@ -1,3 +1,4 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix fabio: <http://purl.org/spar/fabio/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
@@ -6,11 +7,13 @@
 @prefix pro: <http://purl.org/spar/pro/> .
 @prefix scoro: <http://purl.org/spar/scoro/> .
 
-# change this to proper URL
+# change this to proper URLs
 @prefix snp: <http://linkflows.com/snippets/> .
+@prefix : <http://linkflows.com/sample_paper/> .
 
-<http://dx.doi.org/10.3233/DS-170012> a fabio:JournalArticle ;
+:sample_paper a prov:Entity ;
   prov:wasDerivedFrom :version_1 ;
+  a fabio:JournalArticle ;
   dcterms:title "Automating Semantic Publishing" ;
   dcterms:creator <http://orcid.org/0000-0003-0530-4305> ;
   dcterms:language "en" ;

@@ -1,2 +1,4 @@
 - what about the DOI for the previous versions?
 Maybe something like relatesToDocument: DOIxxx
+Ordering of versions using Collection Ontologies (co:List)
+Add dates of submission, acceptance, etc.
