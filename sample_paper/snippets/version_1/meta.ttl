@@ -13,7 +13,7 @@
 
 :sample_paper a prov:Entity ;
   a fabio:JournalArticle ;
-  dcterms:title "Automating Semantic Publishing" ;
+  dcterms:title "Automating the Semantic Publishing -- Applying a format-independent and language-agnostic approach for the compositional and iterative semantic enhancement of scholarly articles" ;
   dcterms:creator <http://orcid.org/0000-0003-0530-4305> ;
   dcterms:language "en" ;
   prism:keywords
