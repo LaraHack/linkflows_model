@@ -1,0 +1,12 @@
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o> .
+
+# change this to proper URLs
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix : <http://linkflows.com/snippets/sample_paper/camera-ready/> .
+
+:paragraph-1 a doco:Paragraph ;
+    c4o:hasContent :snippet-paragraph-1 .
+
+:snippet-paragraph-1
+  snp:snippetURI <http://../sample_paper/snippets/camera-ready/s1_p1.txt> .

@@ -2,3 +2,6 @@
 Maybe something like relatesToDocument: DOIxxx
 Ordering of versions using Collection Ontologies (co:List)
 Add dates of submission, acceptance, etc.
+Link structure to meta
+Add references within paragraphs
+Split paragraphs into sentences
