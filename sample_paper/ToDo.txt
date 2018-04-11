@@ -5,3 +5,4 @@ Add dates of submission, acceptance, etc.
 Link structure to meta
 Add references within paragraphs
 Split paragraphs into sentences
+how to represent http links in text

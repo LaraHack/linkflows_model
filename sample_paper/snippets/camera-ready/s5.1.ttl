@@ -14,11 +14,11 @@
     :paragraph-1 ,
     :paragraph-2 ,
     :paragraph-3 ,
-    :paragraph-4 ,
-    :paragraph-5 ,
-    :paragraph-6 ,
-    :paragraph-7 ,
-    :paragraph-8 ,
+    :paragraph-4 ;
+    :paragraph-5 ;
+    :paragraph-6 ;
+    :paragraph-7 ;
+    :paragraph-8 ;
     :paragraph-9 ;
   co:firstItem [
     co:itemContent :section-introduction-title ;

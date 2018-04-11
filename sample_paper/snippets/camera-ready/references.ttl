@@ -69,11 +69,42 @@
 
 # ...
 
+:reference-3 a co:ListItem ;
+    co:itemContent :berners-lee01 ;
+    co:nextItem :reference-4 .
 
+:reference-4 a co:ListItem ;
+    co:itemContent :berners-lee01 ;
+    co:nextItem :reference-5 .
+
+:reference-5 a co:ListItem ;
+    co:itemContent :berners-lee01 ;
+    co:nextItem :reference-6 .
+
+:reference-6 a co:ListItem ;
+    co:itemContent :berners-lee01 ;
+    co:nextItem :reference-7 .
+
+:reference-7 a co:ListItem ;
+    co:itemContent :berners-lee01 ;
+    co:nextItem :reference-8 .
+
+:reference-8 a co:ListItem ;
+    co:itemContent :berners-lee01 ;
+    co:nextItem :reference-9 .
+
+:reference-9 a co:ListItem ;
+    co:itemContent :berners-lee01 ;
+    co:nextItem :reference-10 .
+
+:reference-10 a co:ListItem ;
+    co:itemContent :berners-lee01 ;
+    co:nextItem :reference-11 .
+
+# ...
 
 :bagnacani14 a biro:BibliographicReference ;
-    dcterms:bibliographicCitation
-        "A. Bagnacani, P. Ciancarini, A. Di Iorio, A.G. Nuzzolese, S. Peroni and F. Vitali, The semantic lancet project: A linked open dataset for scholarly publishing, in: EKAW (Satellite Events) 2014, (2014) , pp. 101–105." ;
+    dcterms:bibliographicCitation <http://../sample_paper/snippets/camera-ready/ref_1.txt>;
     biro:references <http://dx.doi.org/10.1007/978-3-319-17966-7_10> .
 
 :berners-lee01 a biro:BibliographicReference ;
