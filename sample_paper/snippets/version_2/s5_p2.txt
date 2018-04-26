@@ -1,0 +1,5 @@
+In our experiments, all the annotations of a layer are defined according to a particular ontology. To this end, we have developed a collection of ontologies that can be used to describe the first four layers introduced in Section 3, namely:
+1. syntactic containment: EARMARK [11] provides an ontologically precise definition of markup that instantiates the markup of a text document as an independent OWL document outside of the text strings it annotates;
+2. syntactic structures: the Pattern Ontology [9] permits the segmentation of the structure of digital documents into a small number of atomic components, a set of the structural patterns that can be manipulated independently and re-used in different contexts;
+3. structural semantics: DoCO, the Document Components Ontology [5] provides a vocabulary for the structural document components (paragraph, section, list, figure, table, etc.); and
+4. rhetorical components: DEO, the Discourse Elements Ontology [5] provides a structured vocabulary for rhetorical elements within documents (introduction, discussion, acknowledgements, etc.).

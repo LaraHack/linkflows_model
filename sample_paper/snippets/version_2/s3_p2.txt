@@ -1,0 +1,9 @@
+I propose that the same principle of compositionality can be used to infer high-level semantics from the low-level structural organisation of a scholarly article. The idea is to annotate the various parts of a scholarly article progressively according to diverse layers of annotations, from the lower syntactic layers to higher semantic layers.22 For instance, a possible stratification of such layers (from the most syntactic ones to the most semantic ones) is illustrated as follows:
+1. syntactic containment, i.e. the dominance and containment relations [37] that exist between the various parts of scholarly articles;
+2. syntactic structures, i.e. the particular structural pattern (inline, block, etc.) of each part;
+3. structural semantics, i.e. the typical article structural types within articles, such as sections, paragraphs, tables, figures;
+4. rhetorical components, i.e. the functions that characterize each section, such as introduction, methods, material, data, results, conclusions;
+5. citation functions, i.e. the characterization of all inline citations (i.e. in-text reference pointers) with the inferred reason why the authors have made each citation [40];
+6. argumentative organisation, i.e. the relations among the various parts of scholarly articles according to particular argumentative models such as Toulmin’s [42];
+7. article categorization, i.e. the type, either in terms of publication venue (journal article, conference paper, etc.) or content (research paper, review, opinion, etc.), of each scholarly article;
+8. discipline clustering, i.e. the identification of the discipline(s) to which each article belongs to.

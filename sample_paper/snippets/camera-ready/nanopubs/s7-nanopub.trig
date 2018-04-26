@@ -1,0 +1,52 @@
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s7#> .
+@prefix p1nanopub: <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s7_p1#> .
+@prefix p2nanopub: <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s7_p2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix co: <http://purl.org/co/> .
+@prefix c4o: <http://purl.org/spar/c4o> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:section-conclusion a doco:Section , deo:Conclusion ;
+		po:containsAsHeader :section-conclusion-title ;
+		po:contains
+			:paragraph-1 ,
+			:paragraph-2 ;
+		co:firstItem [
+		co:itemContent :section-conclusion-title ;
+		co:nextItem [
+			co:itemContent :paragraph-1 ;
+			co:nextItem [
+			co:itemContent :paragraph-2 ] ] ] .
+	:section-conclusion-title a doco:SectionTitle ;
+		c4o:hasContent "Conclusions" .
+
+	p1nanopub: npx:introduces p1nanopub:paragraph-1 .
+	p2nanopub: npx:introduces p2nanopub:paragraph-2 .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-04-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+
