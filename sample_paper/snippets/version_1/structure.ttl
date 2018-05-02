@@ -12,31 +12,37 @@
   po:contains
     :section-abstract ,
     :section-introduction ,
-    :section-related-works ,
-    :section-pathway-syntax-semantics ,
-    :section-CSIE ,
-    :section-CSIE-implementation ,
-    :section-future-directions ,
+    :section-related-work ,
+    :section-motivation ,
+    :section-contribution-future-directions ,
     :section-conclusions ;
   co:firstItem [
     co:itemContent :section-abstract ;
     co:nextItem [
       co:itemContent :section-introduction ;
       co:nextItem [
-        co:itemContent :section-related-works ;
+        co:itemContent :section-related-work ;
         co:nextItem [
-          co:itemContent :section-pathway-syntax-semantics ;
+          co:itemContent :section-motivation ;
           co:nextItem [
-            co:itemContent :section-CSIE ;
+            co:itemContent :section-contribution-future-directions ;
             co:nextItem [
-              co:itemContent :section-CSIE-implementation ;
-              co:nextItem [
-                co:itemContent :section-future-directions ;
-                co:nextItem [
-                  co:itemContent :section-conclusions ] ] ] ] ] ] ] ] .
+              co:itemContent :section-conclusions ] ] ] ] ] ] .
 
 :section-abstract a doco:Abstract ;
   snp:snippetURI <http://../sample_paper/snippets/version_1/abstract.ttl> .
 
-:section-introduction a doco:Section , deo:Introduction ;
-  snp:snippetURI <http://../sample_paper/snippets/version_1/introduction.ttl> .
+:section-introduction a doco:Section, deo:Introduction ;
+  snp:snippetURI <http://../sample_paper/snippets/version_1/s1.ttl> .
+
+:section-related-work a doco:Section, deo:RelatedWork ;
+  snp:snippetURI <http://../sample_paper/snippets/version_1/s2.ttl> .
+
+:section-motivation a doco:Section, deo:Motivation ;
+  snp:snippetURI <http://../sample_paper/snippets/version_1/s3.ttl> .
+
+section-contribution-future-directions a doco:Section, deo:Contribution ;
+  snp:snippetURI <http://../sample_paper/snippets/version_1/s4.ttl> .
+
+:section-conclusions a doco:Section, deo:Conclusion ;
+  snp:snippetURI <http://../sample_paper/snippets/version_1/s5.ttl> .

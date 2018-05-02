@@ -6,31 +6,25 @@
 
 # change this to proper URLs
 @prefix snp: <http://linkflows.com/snippets/> .
-@prefix : <http://linkflows.com/snippets/sample_paper/camera-ready/> .
+@prefix : <http://linkflows.com/snippets/sample_paper/version_1/> .
 
-:section-introduction a doco:Section , deo:Methods ;
-  po:containsAsHeader :section-methods-title ;
+:section-introduction a doco:Section , deo:Conclusion ;
+  po:containsAsHeader :section-conclusion-title ;
   po:contains
     :paragraph-1 ,
-    :paragraph-2 ,
-    :paragraph-3 ;
+    :paragraph-2 ;
   co:firstItem [
-    co:itemContent :section-methods-title ;
+    co:itemContent :section-conclusion-title ;
     co:nextItem [
       co:itemContent :paragraph-1 ;
       co:nextItem [
-        co:itemContent :paragraph-2 ;
-        co:nextItem [
-          co:itemContent :paragraph-3 ] ] ] ] .
+        co:itemContent :paragraph-2 ] ] ] .
 
-:section-methods-title a doco:SectionTitle ;
-    c4o:hasContent "Implementations of CISE" .
+:section-conclusion-title a doco:SectionTitle ;
+    c4o:hasContent "Conclusions" .
 
 :paragraph-1 a doco:Paragraph ;
-  snp:snippetURI <http://../sample_paper/snippets/camera-ready/s5_p1.ttl> .
+  snp:snippetURI <http://../sample_paper/snippets/version_1/s7_p1.ttl> .
 
 :paragraph-2 a doco:Paragraph ;
-  snp:snippetURI <http://../sample_paper/snippets/camera-ready/s5_p2.ttl> .
-
-:paragraph-3 a doco:Paragraph ;
-  snp:snippetURI <http://../sample_paper/snippets/camera-ready/s5_p3.ttl> .
+  snp:snippetURI <http://../sample_paper/snippets/version_1/s7_p2.ttl> .

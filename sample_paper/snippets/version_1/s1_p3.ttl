@@ -5,18 +5,10 @@
 
 # change this to proper URLs
 @prefix snp: <http://linkflows.com/snippets/> .
-@prefix : <http://linkflows.com/snippets/sample_paper/camera-ready/> .
+@prefix : <http://linkflows.com/snippets/sample_paper/version_1/> .
 
-:paragraph-1 a doco:Paragraph ;
-    c4o:hasContent :snippet-paragraph-1 .
+:paragraph-3 a doco:Paragraph ;
+    c4o:hasContent :snippet-paragraph-3 .
 
-:snippet-paragraph-1
-  snp:snippetURI <http://../sample_paper/snippets/camera-ready/s1_p1.txt> .
-  po:contains :reference-to-2 .
-
-:reference-to-2 a deo:Reference ;
-    c4o:hasContent "[2]" ;
-    dcterms:references :bibliographic-reference-2 .
-
-:bibliographic-reference-2 a deo:BibliographicReference , biro:BibliographicReference ;
-    c4o:hasContent <http://../sample_paper/snippets/camera-ready/ref_2.txt> .
+:snippet-paragraph-3
+  snp:snippetURI <http://../sample_paper/snippets/version_1/s1_p3.txt> .

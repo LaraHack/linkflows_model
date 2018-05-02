@@ -1,0 +1,7 @@
+The basic idea behind this theory is that each element of a markup language should comply with one and only one structural pattern, depending on the fact that the element:
+
+can or cannot contain text (+t in the first case, -t otherwise);
+
+can or cannot contain other elements (+s in the first case, -s otherwise);
+
+is contained by another element that can or cannot contain text (+T in the first case, -T otherwise).

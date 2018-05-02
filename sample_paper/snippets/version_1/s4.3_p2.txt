@@ -1,0 +1,9 @@
+Some of the other aspects related to the particular implementation of the CISE approach that I intend to study in the future aim at collecting enough evidences for demonstrating the following hypotheses:
+
+structural semantics of scholarly document components is a sufficient gateway for identifying rhetorical behaviours of the various document parts, such as section rhetorical functions;
+
+the citation functions, i.e. the author's reasons for citing a given paper [24], can be identified by looking at the rhetorical function of the textual block (paragraph, section) that contains them;
+
+the main argumentative organisation of a paper can be derived by analysing the rhetorics associated to sections and other components;
+
+the way scholarly papers argument and organise their content is somehow shared among several disciplines, regardless the actual interrelation that can or cannot exist between such disciplines.

@@ -1,1 +1,1 @@
-A. Bagnacani, P. Ciancarini, A. Di Iorio, A.G. Nuzzolese, S. Peroni and F. Vitali, The semantic lancet project: A linked open dataset for scholarly publishing, in: EKAW (Satellite Events) 2014, (2014) , pp. 101–105.
+Tim Berners-Lee, James Hendler, Ora Lassila (2001). The Semantic Web. Scientific American, 285 (5): 34-43. DOI: https://doi.org/10.1038/scientificamerican0501-34

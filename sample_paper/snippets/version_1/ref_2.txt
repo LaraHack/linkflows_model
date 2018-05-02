@@ -1,1 +1,1 @@
-T. Berners-Lee, J. Hendler and O. Lassila, The semantic web, Scientific American 285: (5) ((2001) ), 34–43.
+Richard Cyganiak, David Wood, Markus Lanthaler (2014). RDF 1.1 Concepts and Abstract Syntax. W3C Recommendation 25 February 2014. https://www.w3.org/TR/rdf11-concepts/

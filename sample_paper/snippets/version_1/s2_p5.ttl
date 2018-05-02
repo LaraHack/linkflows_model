@@ -5,10 +5,10 @@
 
 # change this to proper URLs
 @prefix snp: <http://linkflows.com/snippets/> .
-@prefix : <http://linkflows.com/snippets/sample_paper/camera-ready/> .
+@prefix : <http://linkflows.com/snippets/sample_paper/version_1/> .
 
 :paragraph-5 a doco:Paragraph ;
     c4o:hasContent :snippet-paragraph-5 .
 
 :snippet-paragraph-5
-  snp:snippetURI <http://../sample_paper/snippets/camera-ready/s2_p5.txt> .
+  snp:snippetURI <http://../sample_paper/snippets/version_1/s2_p5.txt> .

@@ -1,0 +1,1 @@
+Michael Sperberg-McQueen, Claus Huitfeldt (2004). GODDAG: A Data Structure for Overlapping Hierarchies. In Proceedings of the 5th International Workshop on Principles of Digital Document Processing (PODDP 2000): 139-160. DOI: https://doi.org/10.1007/978-3-540-39916-2_12

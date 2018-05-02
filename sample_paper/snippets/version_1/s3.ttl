@@ -6,18 +6,14 @@
 
 # change this to proper URLs
 @prefix snp: <http://linkflows.com/snippets/> .
-@prefix : <http://linkflows.com/snippets/sample_paper/camera-ready/> .
+@prefix : <http://linkflows.com/snippets/sample_paper/version_1/> .
 
 :section-introduction a doco:Section , deo:Motivation ;
   po:containsAsHeader :section-motivation-title ;
   po:contains
     :paragraph-1 ,
     :paragraph-2 ,
-    :paragraph-3 ,
-    :paragraph-4 ,
-    :paragraph-5 ,
-    :paragraph-6 ,
-    :paragraph-7 ;
+    :paragraph-3 ;
   co:firstItem [
     co:itemContent :section-motivation-title ;
     co:nextItem [
@@ -25,36 +21,16 @@
       co:nextItem [
         co:itemContent :paragraph-2 ;
         co:nextItem [
-          co:itemContent :paragraph-3 ;
-          co:nextItem [
-            co:itemContent :paragraph-4 ;
-            co:nextItem [
-              co:itemContent :paragraph-5 ;
-              co:nextItem [
-                co:itemContent :paragraph-6 ;
-                co:nextItem [
-                  co:itemContent :paragraph-7 ] ] ] ] ] ] ] ] .
+          co:itemContent :paragraph-3 ] ] ] ] .
 
 :section-motivation-title a doco:SectionTitle ;
-    c4o:hasContent "A pathway from syntax to semantics" .
+    c4o:hasContent "Compositional and iterative semantic enhancement of scholarly articles" .
 
 :paragraph-1 a doco:Paragraph ;
-  snp:snippetURI <http://../sample_paper/snippets/camera-ready/s3_p1.ttl> .
+  snp:snippetURI <http://../sample_paper/snippets/version_1/s3_p1.ttl> .
 
 :paragraph-2 a doco:Paragraph ;
-  snp:snippetURI <http://../sample_paper/snippets/camera-ready/s3_p2.ttl> .
+  snp:snippetURI <http://../sample_paper/snippets/version_1/s3_p2.ttl> .
 
 :paragraph-3 a doco:Paragraph ;
-  snp:snippetURI <http://../sample_paper/snippets/camera-ready/s3_p3.ttl> .
-
-:paragraph-4 a doco:Paragraph ;
-  snp:snippetURI <http://../sample_paper/snippets/camera-ready/s3_p4.ttl> .
-
-:paragraph-5 a doco:Paragraph ;
-  snp:snippetURI <http://../sample_paper/snippets/camera-ready/s3_p5.ttl> .
-
-:paragraph-6 a doco:Paragraph ;
-  snp:snippetURI <http://../sample_paper/snippets/camera-ready/s3_p6.ttl> .
-
-:paragraph-7 a doco:Paragraph ;
-  snp:snippetURI <http://../sample_paper/snippets/camera-ready/s3_p7.ttl> .
+  snp:snippetURI <http://../sample_paper/snippets/version_1/s3_p3.ttl> .

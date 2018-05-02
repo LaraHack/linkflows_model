@@ -33,31 +33,9 @@
         :reference-21 ,
         :reference-22 ,
         :reference-23 ,
-        :reference-24 ,
-        :reference-25 ,
-        :reference-26 ,
-        :reference-27 ,
-        :reference-28 ,
-        :reference-29 ,
-        :reference-30 ,
-        :reference-31 ,
-        :reference-32 ,
-        :reference-33 ,
-        :reference-34 ,
-        :reference-35 ,
-        :reference-36 ,
-        :reference-37 ,
-        :reference-38 ,
-        :reference-39 ,
-        :reference-40 ,
-        :reference-41 ,
-        :reference-42 ,
-        :reference-43 ,
-        :reference-44 ,
-        :reference-45 ,
-        :reference-46 ;
+        :reference-24 ;
     co:lastItem
-        :reference-46 .
+        :reference-24 .
 
 :reference-1 a co:ListItem ;
     co:itemContent :bagnacani14 ;
@@ -66,8 +44,6 @@
 :reference-2 a co:ListItem ;
     co:itemContent :berners-lee01 ;
     co:nextItem :reference-3 .
-
-# ...
 
 :reference-3 a co:ListItem ;
     co:itemContent :berners-lee01 ;
@@ -101,7 +77,60 @@
     co:itemContent :berners-lee01 ;
     co:nextItem :reference-11 .
 
-# ...
+:reference-11 a co:ListItem ;
+    co:itemContent :berners-lee01 ;
+    co:nextItem :reference-12 .
+
+:reference-12 a co:ListItem ;
+    co:itemContent :berners-lee01 ;
+    co:nextItem :reference-13 .
+
+:reference-13 a co:ListItem ;
+    co:itemContent :berners-lee01 ;
+    co:nextItem :reference-14 .
+
+:reference-14 a co:ListItem ;
+    co:itemContent :berners-lee01 ;
+    co:nextItem :reference-15 .
+
+:reference-15 a co:ListItem ;
+    co:itemContent :berners-lee01 ;
+    co:nextItem :reference-16 .
+
+:reference-16 a co:ListItem ;
+    co:itemContent :berners-lee01 ;
+    co:nextItem :reference-17 .
+
+:reference-17 a co:ListItem ;
+    co:itemContent :berners-lee01 ;
+    co:nextItem :reference-18 .
+
+:reference-18 a co:ListItem ;
+    co:itemContent :berners-lee01 ;
+    co:nextItem :reference-19 .
+
+:reference-19 a co:ListItem ;
+    co:itemContent :berners-lee01 ;
+    co:nextItem :reference-20 .
+
+:reference-20 a co:ListItem ;
+    co:itemContent :berners-lee01 ;
+    co:nextItem :reference-21 .
+
+:reference-21 a co:ListItem ;
+    co:itemContent :berners-lee01 ;
+    co:nextItem :reference-22 .
+
+:reference-22 a co:ListItem ;
+    co:itemContent :berners-lee01 ;
+    co:nextItem :reference-23 .
+
+:reference-23 a co:ListItem ;
+    co:itemContent :berners-lee01 ;
+    co:nextItem :reference-24 .
+
+:reference-24 a co:ListItem ;
+    co:itemContent :berners-lee01 .
 
 :bagnacani14 a biro:BibliographicReference ;
     dcterms:bibliographicCitation <http://../sample_paper/snippets/camera-ready/ref_1.txt>;

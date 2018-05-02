@@ -6,67 +6,25 @@
 
 # change this to proper URLs
 @prefix snp: <http://linkflows.com/snippets/> .
-@prefix : <http://linkflows.com/snippets/sample_paper/camera-ready/> .
+@prefix : <http://linkflows.com/snippets/sample_paper/version_1/> .
 
-:section-introduction a doco:Section , deo:Introduction ;
-  po:containsAsHeader :section-introduction-title ;
+:section-introduction a doco:Section , deo:Contribution ;
+  po:containsAsHeader :section-contribution-title ;
   po:contains
     :paragraph-1 ,
-    :paragraph-2 ,
-    :paragraph-3 ,
-    :paragraph-4 ;
-    :paragraph-5 ;
-    :paragraph-6 ;
-    :paragraph-7 ;
-    :paragraph-8 ;
-    :paragraph-9 ;
+    :paragraph-2 ;
   co:firstItem [
-    co:itemContent :section-introduction-title ;
+    co:itemContent :section-contribution-title ;
     co:nextItem [
       co:itemContent :paragraph-1 ;
       co:nextItem [
-        co:itemContent :paragraph-2 ;
-        co:nextItem [
-          co:itemContent :paragraph-3 ;
-          co:nextItem [
-            co:itemContent :paragraph-4 ;
-            co:nextItem [
-              co:itemContent :paragraph-5 ;
-              co:nextItem [
-                co:itemContent :paragraph-6 ;
-                co:nextItem [
-                  co:itemContent :paragraph-7 ;
-                  co:nextItem [
-                    co:itemContent :paragraph-8 ;
-                    co:nextItem [
-                      co:itemContent :paragraph-9 ] ] ] ] ] ] ] ] ] ] .
+        co:itemContent :paragraph-2 ] ] .
 
-:section-introduction-title a doco:SectionTitle ;
-    c4o:hasContent "Print, digital, and semantic publishing" .
+:section-contribution-title a doco:SectionTitle ;
+    c4o:hasContent "First evidences and future directions" .
 
 :paragraph-1 a doco:Paragraph ;
-  snp:snippetURI <http://../sample_paper/snippets/camera-ready/s1_p1.ttl> .
+  snp:snippetURI <http://../sample_paper/snippets/version_1/s4_p1.ttl> .
 
 :paragraph-2 a doco:Paragraph ;
-  snp:snippetURI <http://../sample_paper/snippets/camera-ready/s1_p2.ttl> .
-
-:paragraph-3 a doco:Paragraph ;
-  snp:snippetURI <http://../sample_paper/snippets/camera-ready/s1_p3.ttl> .
-
-:paragraph-4 a doco:Paragraph ;
-  snp:snippetURI <http://../sample_paper/snippets/camera-ready/s1_p4.ttl> .
-
-:paragraph-5 a doco:Paragraph ;
-  snp:snippetURI <http://../sample_paper/snippets/camera-ready/s1_p5.ttl> .
-
-:paragraph-6 a doco:Paragraph ;
-  snp:snippetURI <http://../sample_paper/snippets/camera-ready/s1_p6.ttl> .
-
-:paragraph-7 a doco:Paragraph ;
-  snp:snippetURI <http://../sample_paper/snippets/camera-ready/s1_p7.ttl> .
-
-:paragraph-8 a doco:Paragraph ;
-  snp:snippetURI <http://../sample_paper/snippets/camera-ready/s1_p8.ttl> .
-
-:paragraph-9 a doco:Paragraph ;
-  snp:snippetURI <http://../sample_paper/snippets/camera-ready/s1_p9.ttl> .
+  snp:snippetURI <http://../sample_paper/snippets/version_1/s4_p2.ttl> .

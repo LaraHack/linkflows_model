@@ -1,0 +1,1 @@
+Text Encoding Initiative Consortium (2016). TEI P5: Guidelines for Electronic Text Encoding and Interchange. http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ (last visited May 30, 2017)

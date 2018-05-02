@@ -1,0 +1,27 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix fr: <https://w3id.org/fr/def/core#> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+
+# change this to proper URLs
+@prefix sample: <http://linkflows.com/sample_paper/> .
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix review1: <http://linkflows.com/sample_paper/version_1/2017_06_09_Review_Stephen_Pettifer.txt> .
+
+review1
+  a prov:Entity ;
+  a fr:Review ;
+  dcterms:creator <http://orcid.org/0000-0002-1809-5621> ;
+  fr:language "en" ;
+  fr:isReviewOf sample ;
+  fr:issuedAt "2017-09-21T00:00:00Z"^^xsd:dateTime ;
+  fr:issuedFor "Data Science Journal" .
+
+<http://orcid.org/0000-0002-1809-5621> a foaf:Person ;
+  foaf:name "Stephen Pettifer" ;
+  frapo:hasORCID "0000-0002-1809-5621" ;
+  pro:holdsRoleInTime <#reviewer> .
+
+<#reviewer> a pro:RoleInTime ;
+   pro:withRole pro:reviewer ;
+   pro:relatesToDocument <http://dx.doi.org/10.3233/DS-170012> .
