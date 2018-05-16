@@ -8,19 +8,19 @@
 @prefix snp: <http://linkflows.com/snippets/> .
 @prefix : <http://linkflows.com/snippets/sample_paper/version_1/> .
 
-:section-introduction a doco:Section , deo:Contribution ;
-  po:containsAsHeader :section-contribution-title ;
+:section-contribution-future-directions-3 a doco:Section , deo:Contribution ;
+  po:containsAsHeader :section-contribution-future-directions-3-title ;
   po:contains
     :paragraph-1 ,
     :paragraph-2 ;
   co:firstItem [
-    co:itemContent :section-contribution-title ;
+    co:itemContent :section-contribution-future-directions-3-title ;
     co:nextItem [
       co:itemContent :paragraph-1 ;
       co:nextItem [
         co:itemContent :paragraph-2 ] ] ] .
 
-:section-contribution-title a doco:SectionTitle ;
+:section-contribution-future-directions-3-title a doco:SectionTitle ;
     c4o:hasContent "From structural patterns to structural semantics" .
 
 :paragraph-1 a doco:Paragraph ;

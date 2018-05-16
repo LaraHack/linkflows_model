@@ -8,8 +8,8 @@
 @prefix snp: <http://linkflows.com/snippets/> .
 @prefix : <http://linkflows.com/snippets/sample_paper/version_1/> .
 
-:section-introduction a doco:Section , deo:RelatedWork ;
-  po:containsAsHeader :section-related-work-title ;
+:section-related-works a doco:Section , deo:RelatedWork ;
+  po:containsAsHeader :section-related-works-title ;
   po:contains
     :paragraph-1 ,
     :paragraph-2 ,
@@ -20,7 +20,7 @@
     :paragraph-7 ,
     :paragraph-8 ;
   co:firstItem [
-    co:itemContent :section-introduction-title ;
+    co:itemContent :section-related-works-title ;
     co:nextItem [
       co:itemContent :paragraph-1 ;
       co:nextItem [
@@ -38,7 +38,7 @@
                   co:nextItem [
                     co:itemContent :paragraph-8 ] ] ] ] ] ] ] ] ] .
 
-:section-related-work-title a doco:SectionTitle ;
+:section-related-works-title a doco:SectionTitle ;
     c4o:hasContent "A pathway from syntax to semantics" .
 
 :paragraph-1 a doco:Paragraph ;

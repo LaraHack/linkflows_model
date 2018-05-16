@@ -1,1 +1,24 @@
-The Semantic Publishing concerns the use of Web and Semantic Web technologies and standards for enhancing a scholarly work semantically so as to improve its discoverability, interactivity, openness and (re-)usability for both humans and machines. Recently, people suggest that the semantic enhancement of a scholarly work should be actually done by the authors of that scholarly work and it should be considered as part of the contribution and reviewed properly. However, the main bottleneck for the concrete adoption of this approach is that authors should always spend additional time and effort for actually adding such semantic annotations, and often they do not have that time available. Thus, the most pragmatic way to convince authors in doing this additional job is to have services that enable the automatic annotation of their scholarly papers by parsing the content that they have already written, thus reducing the total time spent by them to few clicks for adding the semantic annotations. In this paper I propose a generic approach called compositional and iterative semantic enhancement (CISE) that enables the automatic enhancement of scholarly papers with additional semantic annotations in a way that is independent from the markup used for storing scholarly papers and the natural language used for writing their content. In addition, I report the outcomes of some experiments that suggest that the approach proposed has a quite good margin of being feasibly implemented.
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix co: <http://purl.org/co/> .
+@prefix c4o: <http://purl.org/spar/c4o> .
+
+# change this to proper URLs
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix : <http://linkflows.com/snippets/sample_paper/version_1/> .
+
+:section-introduction a doco:Section , deo:Abstract ;
+  po:containsAsHeader :section-abstract-title ;
+  po:contains
+    :paragraph-1 ;
+  co:firstItem [
+    co:itemContent :section-abstract-title ;
+    co:nextItem [
+      co:itemContent :paragraph-1 ] ] .
+
+:section-abstract-title a doco:SectionTitle ;
+    c4o:hasContent "Abstract" .
+
+:paragraph-1 a doco:Paragraph ;
+  snp:snippetURI <http://../sample_paper/snippets/version_1/abstract.txt> .

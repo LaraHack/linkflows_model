@@ -8,7 +8,7 @@
 @prefix snp: <http://linkflows.com/snippets/> .
 @prefix : <http://linkflows.com/snippets/sample_paper/version_1/> .
 
-:section-introduction a doco:Section , deo:Motivation ;
+:section-motivation a doco:Section , deo:Motivation ;
   po:containsAsHeader :section-motivation-title ;
   po:contains
     :paragraph-1 ,
