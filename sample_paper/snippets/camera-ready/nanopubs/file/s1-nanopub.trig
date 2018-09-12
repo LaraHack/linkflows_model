@@ -233,15 +233,15 @@ scholarly works involved the use of manual (e.g. [36]) or (semi-)automatic post-
 		  co:firstItem [
 		    co:itemContent :section-introduction-title ;
 		    co:nextItem [
-		      co:itemContent :paragraph-1 ;
+		      co:itemContent p1nanopub:paragraph-1 ;
 		      co:nextItem [
-			co:itemContent :paragraph-2 ;
+			co:itemContent p2nanopub:paragraph-2 ;
 			co:nextItem [
-			  co:itemContent :paragraph-3 ;
+			  co:itemContent p3nanopub:paragraph-3 ;
 			  co:nextItem [
-			    co:itemContent :paragraph-4 ;
+			    co:itemContent p4nanopub:paragraph-4 ;
 			    co:nextItem [
-			      co:itemContent :paragraph-5 ] ] ] ] ] ] .
+			      co:itemContent p5nanopub:paragraph-5 ] ] ] ] ] ] .
 	:section-introduction-title a doco:SectionTitle ;
 		c4o:hasContent "Print, digital, and semantic publishing" .
 
