@@ -247,9 +247,9 @@ scholarly works involved the use of manual (e.g. [36]) or (semi-)automatic post-
 
 	p1nanopub: npx:introduces p1nanopub:paragraph-1 .
 	p2nanopub: npx:introduces p2nanopub:paragraph-2 .
-	p3nanopub: npx:introduces p1nanopub:paragraph-3 .
-	p4nanopub: npx:introduces p2nanopub:paragraph-4 .
-	p5nanopub: npx:introduces p1nanopub:paragraph-5 .
+	p3nanopub: npx:introduces p3nanopub:paragraph-3 .
+	p4nanopub: npx:introduces p4nanopub:paragraph-4 .
+	p5nanopub: npx:introduces p5nanopub:paragraph-5 .
 }
 
 :provenance {
