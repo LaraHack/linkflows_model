@@ -225,11 +225,11 @@ scholarly works involved the use of manual (e.g. [36]) or (semi-)automatic post-
 	:section-introduction a doco:Section , deo:Introduction  ;
 		po:containsAsHeader :section-introduction-title ;
 		po:contains
-			:paragraph-1 ,
-			:paragraph-2 ,
-			:paragraph-3 ,
-			:paragraph-4 ,
-			:paragraph-5 ;
+			p1nanopub:paragraph-1 ,
+			p2nanopub:paragraph-2 ,
+			p3nanopub:paragraph-3 ,
+			p4nanopub:paragraph-4 ,
+			p5nanopub:paragraph-5 ;
 		  co:firstItem [
 		    co:itemContent :section-introduction-title ;
 		    co:nextItem [
