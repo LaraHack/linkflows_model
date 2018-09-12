@@ -1,0 +1,38 @@
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s7_p1#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-1 a doco:Paragraph ;
+		c4o:hasContent :snippet-paragraph-1 .
+	:snippet-paragraph-1
+		snp:snippetURI """The scholarly communication domain has been involved in several revolutions concerning the way scientific knowledge has been shared in the past 300 years. Gutenberg’s introduction of the print (around 1450) together with the creation of formally-defined groups of scholars (e.g. the Royal Society founded in 1660) have permitted research works to be shared according to a well-known medium, i.e. printed volumes of scholarly journals. Notable examples of this era are Philosophical Transactions published by the Royal Society (first issued in 1776, and still in publication) and The Lancet (first issued in 1823, and currently published by Elsevier). The basic form of the scientific paper remained unchanged until the introduction of the Internet (considering ARPANET as its first implementation around 1960), which enabled research results to be rapidly communicated by means of e-mails. However, it was the advent of the World Wide Web (WWW) in 1989 that made possible the explosion of the Digital Publishing, namely the use of digital formats for the routine publication and distribution of scholarly works. In the last twenty years, the availability of new Web technologies and the reduction of digital storage have resulted in an incredible growth in the availability of scholarly material online, and in an accompanying acceleration of the publishing workflow. However, only with the subsequent advent of one specific set of Web technologies, namely Semantic Web technologies [2], have we started to talk about Semantic Publishing.""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+

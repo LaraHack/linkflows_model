@@ -23,7 +23,7 @@
 	:paragraph-1 a doco:Paragraph ;
 		c4o:hasContent :snippet-paragraph-1 .
 	:snippet-paragraph-1
-		snp:snippetURI """In this article, I have introduced the compositional and iterative semantic enhancement (CISE) approach for the automated enrichment of scholarly articles with meaningful semantic annotations by means of Semantic Publishing technologies. Taking inspiration from past approaches that rely on the principles of compositionality and downward causation, the CISE strategy enables the automatic enhancement of the various parts comprising a scholarly article by means of an iterative process, providing additional semantic descriptions by combining the enhancements obtained in previous executions of the approach.""" .
+		snp:snippetURI """In order to understand what extent structural patterns are used in different communities, we have executed this CISE-based algorithm on a large set of documents stored using different XML-based markup languages. Some of these markup languages, e.g. TEI [41] and DocBook [44], are not inherently pattern-based – i.e. it is possible in principle to use them to write locally/globally incoherent documents. For instance, a DocBook document that is not pattern-based in introduced in Listing 3.""" .
 }
 
 :provenance {

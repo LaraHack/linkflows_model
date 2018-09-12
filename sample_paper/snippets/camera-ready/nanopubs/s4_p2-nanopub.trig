@@ -23,7 +23,7 @@
 	:paragraph-1 a doco:Paragraph ;
 		c4o:hasContent :snippet-paragraph-1 .
 	:snippet-paragraph-1
-		snp:snippetURI """In this article, I have introduced the compositional and iterative semantic enhancement (CISE) approach for the automated enrichment of scholarly articles with meaningful semantic annotations by means of Semantic Publishing technologies. Taking inspiration from past approaches that rely on the principles of compositionality and downward causation, the CISE strategy enables the automatic enhancement of the various parts comprising a scholarly article by means of an iterative process, providing additional semantic descriptions by combining the enhancements obtained in previous executions of the approach.""" .
+		snp:snippetURI """The pseudocode shown in Listing 1 introduces the main procedure of CISE. It works by taking three objects as inputs (line 1): a set of marked-up documents to process, a set of annotations referring to the various parts contained in the documents, and a list of rules responsible for inferring new annotations from the existing annotations associated with the documents. Each rule is actually a function taking two parameters as input: a set of documents and a set of annotations. A rule can be run or not run according to the current status of the inputs it receives. For instance, some existing annotations activate the application of a particular rule on a certain document, while others do not. In principle, a rule can simultaneously process more than one document in the input document set, and it could thus find common patterns across documents. The output of a rule is a tuple to_add, to_remove, that are two sets of annotations to be added to and removed from the current set of annotations.""" .
 }
 
 :provenance {

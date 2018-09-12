@@ -5,8 +5,7 @@
 @prefix deo: <http://purl.org/spar/deo/> .
 
 # change this to proper URLs
-@prefix snp: <http://linkflows.com/snippets/> .
-@prefix : <http://linkflows.com/sample_paper/camera-ready/> .
+@prefix : <https://github.com/LaraHack/linkflows_model/blob/master/sample_paper/snippets/camera-ready/> .
 
 :sample_paper a fabio:JournalArticle ;
   po:contains
@@ -39,7 +38,7 @@
                     co:itemContent :section-acknowledgements ] ] ] ] ] ] ] ] ] .
 
 :section-abstract a doco:Abstract ;
-  snp:snippetURI <http://../sample_paper/snippets/camera-ready/abstract.ttl> .
+  snp:snippetURI <http://../sample_paper/snippets/camera-ready/abstract.txt> .
 
 :section-introduction a doco:Section , deo:Introduction ;
   snp:snippetURI <http://../sample_paper/snippets/camera-ready/s1.ttl> .

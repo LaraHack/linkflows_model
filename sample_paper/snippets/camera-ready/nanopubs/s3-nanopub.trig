@@ -45,7 +45,7 @@
 }
 
 :pubinfo {
-	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+	: dc:created "2018-04-10T18:05:11+01:00"^^xsd:dateTime ;
 		pav:createdBy ex:linkflowsAuthoringTool ;
 		a npx:ExampleNanopub .
 }

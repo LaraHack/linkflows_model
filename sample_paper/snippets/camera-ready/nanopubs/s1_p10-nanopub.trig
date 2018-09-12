@@ -23,7 +23,7 @@
 	:paragraph-1 a doco:Paragraph ;
 		c4o:hasContent :snippet-paragraph-1 .
 	:snippet-paragraph-1
-		snp:snippetURI """In this article, I have introduced the compositional and iterative semantic enhancement (CISE) approach for the automated enrichment of scholarly articles with meaningful semantic annotations by means of Semantic Publishing technologies. Taking inspiration from past approaches that rely on the principles of compositionality and downward causation, the CISE strategy enables the automatic enhancement of the various parts comprising a scholarly article by means of an iterative process, providing additional semantic descriptions by combining the enhancements obtained in previous executions of the approach.""" .
+		snp:snippetURI """The rest of the paper is organised as follows. In Section 2 I introduce some of the most important research works on this topic. In Section 3 I introduce the foundational theories that have been used to derive the approach for automating the enhancement of scholarly articles. In Section 4 I introduce CISE by describing the main conditions needed for running it and by explaining the algorithm defining the approach. In Section 5 I briefly discuss the results of implementing CISE on a corpus of scholarly articles stored in XML formats. In Section 6 I present some limitations of the approach, as well as future directions for my research on this subject. Finally, in Section 7 I conclude the paper, reprising the research question mentioned above.""" .
 }
 
 :provenance {

@@ -1,0 +1,48 @@
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s7_p1#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-1 a doco:Paragraph ;
+		c4o:hasContent :snippet-paragraph-1 .
+	:snippet-paragraph-1
+		snp:snippetURI """Taking inspiration from the ideas introduced in Section 3, and restricting the possible input documents to the scholarly articles available in a reasonable markup language (e.g. an XML-like language), one can propose an approach for retrieving the higher-level characterizations of the parts of a scholarly article starting from their lower-level conceptualisations (by means of the principle of compositionality) and vice versa (by means of the downward causation). I have named this approach compositional and iterative semantic enhancement (or CISE, pronounced size) of scholarly articles. The following conditions should be satisfied when applying CISE:
+
+[hierarchical markup] the source of a scholarly article should be available in (or easily converted into) a markup language that can convey the hierarchical containment of the various parts of scholarly articles;
+
+[language agnosticism] there is no need to have a prior knowledge of the natural language used for writing the scholarly article;
+
+[layer inter-dependency] a layer describing a particular conceptualisation of the parts of a scholarly article should depend on the conceptualisation of at least one other lower or higher layer;
+
+[inter-domain reuse] some of the typical structural and semantic aspects of scholarly articles should be shared across different research domains (e.g. abstract, introduction, conclusions);
+
+[intra-domain reuse] scholarly documents within a specific domain should share several structural and semantic aspects, even if these are not adopted by other research domains (e.g. the “related works” section is used in Computer Science articles, while it is not used in Life Science articles).""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+

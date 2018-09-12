@@ -23,7 +23,7 @@
 	:paragraph-1 a doco:Paragraph ;
 		c4o:hasContent :snippet-paragraph-1 .
 	:snippet-paragraph-1
-		snp:snippetURI """In this article, I have introduced the compositional and iterative semantic enhancement (CISE) approach for the automated enrichment of scholarly articles with meaningful semantic annotations by means of Semantic Publishing technologies. Taking inspiration from past approaches that rely on the principles of compositionality and downward causation, the CISE strategy enables the automatic enhancement of the various parts comprising a scholarly article by means of an iterative process, providing additional semantic descriptions by combining the enhancements obtained in previous executions of the approach.""" .
+		snp:snippetURI """The misalignment between those who authored the original work and those who added semantic annotations to it is the focal point for discussion by the editors-in-chief of this journal in this introductory issue. Their point is that, following the early experimentation with Semantic Publishing, we should now start to push for and support what they call Genuine Semantic Publishing. This genuineness basically refers to the fact that the semantic enhancement of a scholarly work should be undertaken by the authors of that scholarly work at the time of writing. According to this perspective, the semantic annotations included within the scholarly work includes should be considered as proper part of the contribution and treated as such, including being subjected to proper peer review.""" .
 }
 
 :provenance {
