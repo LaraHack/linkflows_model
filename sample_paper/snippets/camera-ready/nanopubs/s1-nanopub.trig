@@ -1,4 +1,4 @@
-@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s7#> .
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1#> .
 @prefix p1nanopub: <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p1#> .
 @prefix p2nanopub: <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p2#> .
 @prefix p3nanopub: <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p3#> .
@@ -11,16 +11,15 @@
 @prefix p10nanopub: <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p10#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
-@prefix pav: <http://purl.org/pav/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix npx: <http://purl.org/nanopub/x/> .
-@prefix doco: <http://purl.org/spar/doco/> .
-@prefix deo: <http://purl.org/spar/deo/> .
 @prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
 @prefix co: <http://purl.org/co/> .
-@prefix c4o: <http://purl.org/spar/c4o> .
-@prefix ex: <http://example.org/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
 
 :Head {
 	: np:hasAssertion :assertion ;
@@ -33,60 +32,61 @@
 	:section-introduction a doco:Section , deo:Introduction  ;
 		po:containsAsHeader :section-introduction-title ;
 		po:contains
-			:paragraph-1 ,
-			:paragraph-2 ,
-			:paragraph-3 ,
-			:paragraph-4 ,
-			:paragraph-5 ,
-			:paragraph-6 ,
-			:paragraph-7 ,
-			:paragraph-8 ,
-			:paragraph-9 ,
-			:paragraph-10 ;
+			p1nanopub:paragraph-1 ,
+			p2nanopub:paragraph-2 ,
+			p3nanopub:paragraph-3 ,
+			p4nanopub:paragraph-4 ,
+			p5nanopub:paragraph-5 ,
+			p6nanopub:paragraph-6 ,
+			p7nanopub:paragraph-7 ,
+			p8nanopub:paragraph-8 ,
+			p9nanopub:paragraph-9 ,
+			p10nanopub:paragraph-10 ;
 		  co:firstItem [
 		    co:itemContent :section-introduction-title ;
 		    co:nextItem [
-		      co:itemContent :paragraph-1 ;
+		      co:itemContent p1nanopub:paragraph-1 ;
 		      co:nextItem [
-			co:itemContent :paragraph-2 ;
+			co:itemContent p2nanopub:paragraph-2 ;
 			co:nextItem [
-			  co:itemContent :paragraph-3 ;
+			  co:itemContent p3nanopub:paragraph-3 ;
 			  co:nextItem [
-			    co:itemContent :paragraph-4 ;
+			    co:itemContent p4nanopub:paragraph-4 ;
 			    co:nextItem [
-			      co:itemContent :paragraph-5 ;
+			      co:itemContent p5nanopub:paragraph-5 ;
 			      co:nextItem [
-				co:itemContent :paragraph-6 ;
+				co:itemContent p6nanopub:paragraph-6 ;
 				co:nextItem [
-				  co:itemContent :paragraph-7 ;
+				  co:itemContent p7nanopub:paragraph-7 ;
 				  co:nextItem [
-				    co:itemContent :paragraph-8 ;
+				    co:itemContent p8nanopub:paragraph-8 ;
 				    co:nextItem [
-				      co:itemContent :paragraph-9 ;
+				      co:itemContent p9nanopub:paragraph-9 ;
 					co:nextItem [
-				      	co:itemContent :paragraph-10 ] ] ] ] ] ] ] ] ] ] ] .
+				      	co:itemContent p10nanopub:paragraph-10 ] ] ] ] ] ] ] ] ] ] ] .
 	:section-introduction-title a doco:SectionTitle ;
 		c4o:hasContent "Print, digital, and semantic publishing" .
 
 	p1nanopub: npx:introduces p1nanopub:paragraph-1 .
 	p2nanopub: npx:introduces p2nanopub:paragraph-2 .
-	p3nanopub: npx:introduces p1nanopub:paragraph-3 .
-	p4nanopub: npx:introduces p2nanopub:paragraph-4 .
-	p5nanopub: npx:introduces p1nanopub:paragraph-5 .
-	p6nanopub: npx:introduces p2nanopub:paragraph-6 .
-	p7nanopub: npx:introduces p1nanopub:paragraph-7 .
-	p8nanopub: npx:introduces p2nanopub:paragraph-8 .
-	p9nanopub: npx:introduces p1nanopub:paragraph-9 .
-	p10nanopub: npx:introduces p2nanopub:paragraph-10 .
+	p3nanopub: npx:introduces p3nanopub:paragraph-3 .
+	p4nanopub: npx:introduces p4nanopub:paragraph-4 .
+	p5nanopub: npx:introduces p5nanopub:paragraph-5 .
+	p6nanopub: npx:introduces p6nanopub:paragraph-6 .
+	p7nanopub: npx:introduces p7nanopub:paragraph-7 .
+	p8nanopub: npx:introduces p8nanopub:paragraph-8 .
+	p9nanopub: npx:introduces p9nanopub:paragraph-9 .
+	p10nanopub: npx:introduces p10nanopub:paragraph-10 .
 }
 
 :provenance {
-	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> ;
+		 prov:hadPrimarySource <http://dx.doi.org/10.3233/DS-170012> .
 }
 
 :pubinfo {
-	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
-		pav:createdBy ex:linkflowsAuthoringTool ;
+	: dc:created "2018-09-13T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy  <https://orcid.org/0000-0002-7114-6459> ;
 		a npx:ExampleNanopub .
 }
 

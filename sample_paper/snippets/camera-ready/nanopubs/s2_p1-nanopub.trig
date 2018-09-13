@@ -1,16 +1,12 @@
-@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s7_p1#> .
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s2_p1#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
-@prefix pav: <http://purl.org/pav/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix npx: <http://purl.org/nanopub/x/> .
 @prefix doco: <http://purl.org/spar/doco/> .
 @prefix c4o: <http://purl.org/spar/c4o/> .
-@prefix deo: <http://purl.org/spar/deo/> .
-@prefix biro: <http://purl.org/spar/biro/> .
-@prefix snp: <http://linkflows.com/snippets/> .
-@prefix ex: <http://example.org/> .
 
 :Head {
 	: np:hasAssertion :assertion ;
@@ -21,18 +17,17 @@
 
 :assertion {
 	:paragraph-1 a doco:Paragraph ;
-		c4o:hasContent :snippet-paragraph-1 .
-	:snippet-paragraph-1
-		snp:snippetURI """Past Document Engineering works that have proposed algorithms for the characterization and identification of particular structural behaviours of various parts of text documents. For instance, in [39], Tannier et al. present an algorithm based on Natural Language Processing (NLP) tools for assigning each element of an XML document to one of three categories. These categories are hard tag (i.e. those elements that interrupt the linearity of a text, such as paragraphs and sections), soft tag (i.e. the elements that identify significant text fragments that do not break the text flow, such as emphasis and links), and jump tag (i.e. those elements that are detached from the surrounding text, such as footnotes and comments).""" .
+		c4o:hasContent """Past Document Engineering works that have proposed algorithms for the characterization and identification of particular structural behaviours of various parts of text documents. For instance, in [39], Tannier et al. present an algorithm based on Natural Language Processing (NLP) tools for assigning each element of an XML document to one of three categories. These categories are hard tag (i.e. those elements that interrupt the linearity of a text, such as paragraphs and sections), soft tag (i.e. the elements that identify significant text fragments that do not break the text flow, such as emphasis and links), and jump tag (i.e. those elements that are detached from the surrounding text, such as footnotes and comments).""" .
 }
 
 :provenance {
-	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> ;
+		 prov:hadPrimarySource <http://dx.doi.org/10.3233/DS-170012> .
 }
 
 :pubinfo {
-	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
-		pav:createdBy ex:linkflowsAuthoringTool ;
+	: dc:created "2018-09-13T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy  <https://orcid.org/0000-0002-7114-6459> ;
 		a npx:ExampleNanopub .
 }
 

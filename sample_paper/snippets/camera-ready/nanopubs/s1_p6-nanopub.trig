@@ -1,16 +1,12 @@
 @prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p6#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
-@prefix pav: <http://purl.org/pav/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix npx: <http://purl.org/nanopub/x/> .
 @prefix doco: <http://purl.org/spar/doco/> .
 @prefix c4o: <http://purl.org/spar/c4o/> .
-@prefix deo: <http://purl.org/spar/deo/> .
-@prefix biro: <http://purl.org/spar/biro/> .
-@prefix snp: <http://linkflows.com/snippets/> .
-@prefix ex: <http://example.org/> .
 
 :Head {
 	: np:hasAssertion :assertion ;
@@ -21,18 +17,17 @@
 
 :assertion {
 	:paragraph-6 a doco:Paragraph ;
-		c4o:hasContent :snippet-paragraph-6 .
-	:snippet-paragraph-6
-		snp:snippetURI """In recent years, several tools have been developed for the automatic annotation of scholarly texts according to one or more particular dimensions, e.g. by considering documents that are available in specific document formats – e.g. the SPAR Extractor Suite developed for the RASH format [31] – or that are written in a particular language such as English – e.g. FRED1 [16]. However, these tools are typically tied to certain requirements – in the aforementioned cases, the use of a specific markup for organising the document content and of a particular language for writing its text – that prevent their adoption in broader contexts. I wonder if we can propose an alternative approach that allows a machine to infer some of the semantic annotations for scholarly articles without considering the particular markup language used nor authoring language used.""" .
+		c4o:hasContent """In recent years, several tools have been developed for the automatic annotation of scholarly texts according to one or more particular dimensions, e.g. by considering documents that are available in specific document formats – e.g. the SPAR Extractor Suite developed for the RASH format [31] – or that are written in a particular language such as English – e.g. FRED1 [16]. However, these tools are typically tied to certain requirements – in the aforementioned cases, the use of a specific markup for organising the document content and of a particular language for writing its text – that prevent their adoption in broader contexts. I wonder if we can propose an alternative approach that allows a machine to infer some of the semantic annotations for scholarly articles without considering the particular markup language used nor authoring language used.""" .
 }
 
 :provenance {
-	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> ;
+		 prov:hadPrimarySource <http://dx.doi.org/10.3233/DS-170012> .
 }
 
 :pubinfo {
-	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
-		pav:createdBy ex:linkflowsAuthoringTool ;
+	: dc:created "2018-09-13T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy  <https://orcid.org/0000-0002-7114-6459> ;
 		a npx:ExampleNanopub .
 }
 

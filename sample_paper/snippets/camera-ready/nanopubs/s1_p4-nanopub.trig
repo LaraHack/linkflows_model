@@ -1,16 +1,12 @@
 @prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p4#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
-@prefix pav: <http://purl.org/pav/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix npx: <http://purl.org/nanopub/x/> .
 @prefix doco: <http://purl.org/spar/doco/> .
 @prefix c4o: <http://purl.org/spar/c4o/> .
-@prefix deo: <http://purl.org/spar/deo/> .
-@prefix biro: <http://purl.org/spar/biro/> .
-@prefix snp: <http://linkflows.com/snippets/> .
-@prefix ex: <http://example.org/> .
 
 :Head {
 	: np:hasAssertion :assertion ;
@@ -21,18 +17,17 @@
 
 :assertion {
 	:paragraph-4 a doco:Paragraph ;
-		c4o:hasContent :snippet-paragraph-4 .
-	:snippet-paragraph-4
-		snp:snippetURI """While the Genuine Semantic Publishing is, indeed, a desirable goal, it requires specific incentives to induce the authors to spend additional time creating the semantic enrichments to their articles, over and above that required to create the textual content. In recent experiments, my colleagues and I have undertaken in the context of the SAVE-SD workshops, described in [31], the clear trend is that, with the exception of the few individuals who believe in the Semantic Publishing as a public good, generally only a very low number of semantic statements are specified by the authors, even if we made available incentives or prizes for people who submit their scholarly papers in HTML+RDF format. The number of semantic statements in each of the papers presented during SAVE-SD workshops ranged from 24 to 903, with a median value of 46 (25th percentile 34, 75th percentile 175). The possible reasons for this behaviour, as identified by the study, included the lack of appropriate support, in the form of graphical user interfaces, that would facilitate the annotation of scholarly works with semantic data.""" .
+		c4o:hasContent """While the Genuine Semantic Publishing is, indeed, a desirable goal, it requires specific incentives to induce the authors to spend additional time creating the semantic enrichments to their articles, over and above that required to create the textual content. In recent experiments, my colleagues and I have undertaken in the context of the SAVE-SD workshops, described in [31], the clear trend is that, with the exception of the few individuals who believe in the Semantic Publishing as a public good, generally only a very low number of semantic statements are specified by the authors, even if we made available incentives or prizes for people who submit their scholarly papers in HTML+RDF format. The number of semantic statements in each of the papers presented during SAVE-SD workshops ranged from 24 to 903, with a median value of 46 (25th percentile 34, 75th percentile 175). The possible reasons for this behaviour, as identified by the study, included the lack of appropriate support, in the form of graphical user interfaces, that would facilitate the annotation of scholarly works with semantic data.""" .
 }
 
 :provenance {
-	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> ;
+		 prov:hadPrimarySource <http://dx.doi.org/10.3233/DS-170012> .
 }
 
 :pubinfo {
-	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
-		pav:createdBy ex:linkflowsAuthoringTool ;
+	: dc:created "2018-09-13T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy  <https://orcid.org/0000-0002-7114-6459> ;
 		a npx:ExampleNanopub .
 }
 
