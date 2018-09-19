@@ -23,7 +23,7 @@
 }
 
 :assertion {
-	:section-implemetation a doco:Section , deo:Scenario ;
+	:section-implemetation a doco:Section, deo:Scenario ;
 		po:containsAsHeader :section-implementation-title ;
 		po:contains
 			p1nanopub:paragraph-1 ,

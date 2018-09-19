@@ -1,16 +1,12 @@
-@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s7_p1#> .
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s5_p1#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
-@prefix pav: <http://purl.org/pav/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix npx: <http://purl.org/nanopub/x/> .
 @prefix doco: <http://purl.org/spar/doco/> .
 @prefix c4o: <http://purl.org/spar/c4o/> .
-@prefix deo: <http://purl.org/spar/deo/> .
-@prefix biro: <http://purl.org/spar/biro/> .
-@prefix snp: <http://linkflows.com/snippets/> .
-@prefix ex: <http://example.org/> .
 
 :Head {
 	: np:hasAssertion :assertion ;
@@ -21,18 +17,17 @@
 
 :assertion {
 	:paragraph-1 a doco:Paragraph ;
-		c4o:hasContent :snippet-paragraph-1 .
-	:snippet-paragraph-1
-		snp:snippetURI """In recent years, I have experimented extensively, with other colleagues in my research group, with possible paths for the implementation of CISE. Our goal, starting from the pure syntactic containment of the various parts comprising scholarly articles, was to derive additional semantic descriptions of them. Each implementation of CISE we developed aimed at inferring new annotations related to one layer only, describing a specific kind of information.""" .
+		c4o:hasContent """In recent years, I have experimented extensively, with other colleagues in my research group, with possible paths for the implementation of CISE. Our goal, starting from the pure syntactic containment of the various parts comprising scholarly articles, was to derive additional semantic descriptions of them. Each implementation of CISE we developed aimed at inferring new annotations related to one layer only, describing a specific kind of information.""" .
 }
 
 :provenance {
-	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> ;
+		 prov:hadPrimarySource <http://dx.doi.org/10.3233/DS-170012> .
 }
 
 :pubinfo {
-	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
-		pav:createdBy ex:linkflowsAuthoringTool ;
+	: dc:created "2018-09-17T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy  <https://orcid.org/0000-0002-7114-6459> ;
 		a npx:ExampleNanopub .
 }
 

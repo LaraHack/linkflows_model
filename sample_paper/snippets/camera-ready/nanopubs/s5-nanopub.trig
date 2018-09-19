@@ -29,7 +29,7 @@
 			p2nanopub:paragraph-2 ,
 			p3nanopub:paragraph-3 ;
 		co:firstItem [
-		co:itemContent :section-conclusion-title ;
+		co:itemContent :section-implementation-title ;
 		co:nextItem [
 		      co:itemContent p1nanopub:paragraph-1 ;
 		      co:nextItem [

@@ -30,7 +30,7 @@
 }
 
 :assertion {
-	:section-implementation a doco:Section , deo:Scenario ;
+	:section-implementation a doco:Section, deo:Scenario ;
 		po:containsAsHeader :section-implementation-title ;
 		po:contains
 			p1nanopub:paragraph-1 ,
@@ -67,7 +67,7 @@
 					co:nextItem [
 				      	co:itemContent p10nanopub:paragraph-10 ;
 					  co:nextItem [
-				      	  co:itemContent p11nanopub:paragraph-11 ] ] ] ] ] ] ] ] ] ] ] ].
+				      	  co:itemContent p11nanopub:paragraph-11 ] ] ] ] ] ] ] ] ] ] ] ] .
 	:section-implementation-title a doco:SectionTitle ;
 		c4o:hasContent "From containment to structural patterns" .
 

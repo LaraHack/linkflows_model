@@ -43,7 +43,7 @@
 			  co:nextItem [
 			    co:itemContent p4nanopub:paragraph-4 ;
 			    co:nextItem [
-			      co:itemContent p5nanopub:paragraph-5 ] ] ] ] ] ].
+			      co:itemContent p5nanopub:paragraph-5 ] ] ] ] ] ] .
 	:section-implementation-title a doco:SectionTitle ;
 		c4o:hasContent "From structural semantics to rhetorical components and back" .
 
