@@ -1,16 +1,12 @@
-@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s7_p1#> .
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s3_p2#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
-@prefix pav: <http://purl.org/pav/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix npx: <http://purl.org/nanopub/x/> .
 @prefix doco: <http://purl.org/spar/doco/> .
 @prefix c4o: <http://purl.org/spar/c4o/> .
-@prefix deo: <http://purl.org/spar/deo/> .
-@prefix biro: <http://purl.org/spar/biro/> .
-@prefix snp: <http://linkflows.com/snippets/> .
-@prefix ex: <http://example.org/> .
 
 :Head {
 	: np:hasAssertion :assertion ;
@@ -20,10 +16,8 @@
 }
 
 :assertion {
-	:paragraph-1 a doco:Paragraph ;
-		c4o:hasContent :snippet-paragraph-1 .
-	:snippet-paragraph-1
-		snp:snippetURI """I propose that the same principle of compositionality can be used to infer high-level semantics from the low-level structural organisation of a scholarly article. The idea is to annotate the various parts of a scholarly article progressively according to diverse layers of annotations, from the lower syntactic layers to higher semantic layers.2 For instance, a possible stratification of such layers (from the most syntactic ones to the most semantic ones) is illustrated as follows:
+	:paragraph-2 a doco:Paragraph ;
+		c4o:hasContent """I propose that the same principle of compositionality can be used to infer high-level semantics from the low-level structural organisation of a scholarly article. The idea is to annotate the various parts of a scholarly article progressively according to diverse layers of annotations, from the lower syntactic layers to higher semantic layers.2 For instance, a possible stratification of such layers (from the most syntactic ones to the most semantic ones) is illustrated as follows:
 1. syntactic containment, i.e. the dominance and containment relations [37] that exist between the various parts of scholarly articles;
 
 2. syntactic structures, i.e. the particular structural pattern (inline, block, etc.) of each part;
@@ -42,12 +36,13 @@
 }
 
 :provenance {
-	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> ;
+		 prov:hadPrimarySource <http://dx.doi.org/10.3233/DS-170012> .
 }
 
 :pubinfo {
-	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
-		pav:createdBy ex:linkflowsAuthoringTool ;
+	: dc:created "2018-09-18T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy  <https://orcid.org/0000-0002-7114-6459> ;
 		a npx:ExampleNanopub .
 }
 
