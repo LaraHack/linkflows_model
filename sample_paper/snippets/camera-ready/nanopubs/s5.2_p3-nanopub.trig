@@ -1,16 +1,12 @@
-@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s7_p1#> .
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s5.2_p3#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/terms/> .
-@prefix pav: <http://purl.org/pav/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix np: <http://www.nanopub.org/nschema#> .
 @prefix npx: <http://purl.org/nanopub/x/> .
 @prefix doco: <http://purl.org/spar/doco/> .
 @prefix c4o: <http://purl.org/spar/c4o/> .
-@prefix deo: <http://purl.org/spar/deo/> .
-@prefix biro: <http://purl.org/spar/biro/> .
-@prefix snp: <http://linkflows.com/snippets/> .
-@prefix ex: <http://example.org/> .
 
 :Head {
 	: np:hasAssertion :assertion ;
@@ -20,19 +16,18 @@
 }
 
 :assertion {
-	:paragraph-1 a doco:Paragraph ;
-		c4o:hasContent :snippet-paragraph-1 .
-	:snippet-paragraph-1
-		snp:snippetURI """A pseudocode of this new algorithm is introduced in Listing 4. It is organised in two steps. First, starting from the input XML documents, it retrieves all the annotations of the first two layers by reusing the algorithm discussed in Section 5.1 (line 2). Then, the following step (lines 4–9) reuses the CISE algorithm introduced in Section 4, by specifying the annotation retrieved previously and the list of functions, where each is responsible for identifying all the markup elements that act according to a specific structural behaviour (e.g. paragraph) in the documents. Each of these rules implements some heuristics that have been derived by analysing how the structural patterns are used in scholarly documents, as detailed in [10] with more detail. For instance, identify_paragraphs associate the type doco:Paragraph to all the instances of the same markup element “x” that is the block element (in terms of structural patterns) with most occurrences (i.e. instances) in the document. If we consider the example in the panel D of Fig. 4, all the instances of the element “c” will be annotated as paragraphs.""" .
+	:paragraph-3 a doco:Paragraph ;
+		c4o:hasContent """A pseudocode of this new algorithm is introduced in Listing 4. It is organised in two steps. First, starting from the input XML documents, it retrieves all the annotations of the first two layers by reusing the algorithm discussed in Section 5.1 (line 2). Then, the following step (lines 4–9) reuses the CISE algorithm introduced in Section 4, by specifying the annotation retrieved previously and the list of functions, where each is responsible for identifying all the markup elements that act according to a specific structural behaviour (e.g. paragraph) in the documents. Each of these rules implements some heuristics that have been derived by analysing how the structural patterns are used in scholarly documents, as detailed in [10] with more detail. For instance, identify_paragraphs associate the type doco:Paragraph to all the instances of the same markup element “x” that is the block element (in terms of structural patterns) with most occurrences (i.e. instances) in the document. If we consider the example in the panel D of Fig. 4, all the instances of the element “c” will be annotated as paragraphs.""" .
 }
 
 :provenance {
-	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> ;
+		 prov:hadPrimarySource <http://dx.doi.org/10.3233/DS-170012> .
 }
 
 :pubinfo {
-	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
-		pav:createdBy ex:linkflowsAuthoringTool ;
+	: dc:created "2018-09-20T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy  <https://orcid.org/0000-0002-7114-6459> ;
 		a npx:ExampleNanopub .
 }
 
