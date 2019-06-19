@@ -1,0 +1,1268 @@
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p1#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-1 a doco:Paragraph ;
+		c4o:hasContent :snippet-paragraph-1 .
+	:snippet-paragraph-1
+		snp:snippetURI """The scholarly communication domain has been involved in several revolutions concerning the way scientific knowledge has been shared in the past 300 years. Gutenberg’s introduction of the print (around 1450) together with the creation of formally-defined groups of scholars (e.g. the Royal Society founded in 1660) have permitted research works to be shared according to a well-known medium, i.e. printed volumes of scholarly journals. Notable examples of this era are Philosophical Transactions published by the Royal Society (first issued in 1776, and still in publication) and The Lancet (first issued in 1823, and currently published by Elsevier). The basic form of the scientific paper remained unchanged until the introduction of the Internet (considering ARPANET as its first implementation around 1960), which enabled research results to be rapidly communicated by means of e-mails. However, it was the advent of the World Wide Web (WWW) in 1989 that made possible the explosion of the Digital Publishing, namely the use of digital formats for the routine publication and distribution of scholarly works. In the last twenty years, the availability of new Web technologies and the reduction of digital storage have resulted in an incredible growth in the availability of scholarly material online, and in an accompanying acceleration of the publishing workflow. However, only with the subsequent advent of one specific set of Web technologies, namely Semantic Web technologies [2], have we started to talk about Semantic Publishing.""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-2 a doco:Paragraph ;
+		c4o:hasContent :snippet-paragraph-2 .
+	:snippet-paragraph-2
+		snp:snippetURI """Within the scholarly domain, Semantic Publishing concerns the use of Web and Semantic Web technologies
+and standards for enhancing a scholarly work semantically (by means of plain RDF statements
+[7], nano-publications [17], etc.) so as to improve its discoverability, interactivity, openness and
+(re-)usability for both humans and machines [35]. The assumptions of openness implicit in Semantic
+Publishing have been explicitly adopted for the publication of research data by the FAIR (Findable, Accessible,
+Interoperable, Re-usable) data principles [45]. Early examples of the semantic enrichment of
+scholarly works involved the use of manual (e.g. [36]) or (semi-)automatic post-publication processes
+(e.g. [1]) by people other than the original authors of such works""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p3#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-3 a doco:Paragraph ;
+		c4o:hasContent :snippet-paragraph-3 .
+	:snippet-paragraph-3
+		snp:snippetURI """The misalignment between those who authored the original work and those who added semantic annotations to it is the focal point for discussion by the editors-in-chief of this journal in this introductory issue. Their point is that, following the early experimentation with Semantic Publishing, we should now start to push for and support what they call Genuine Semantic Publishing. This genuineness basically refers to the fact that the semantic enhancement of a scholarly work should be undertaken by the authors of that scholarly work at the time of writing. According to this perspective, the semantic annotations included within the scholarly work includes should be considered as proper part of the contribution and treated as such, including being subjected to proper peer review.""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p4#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-4 a doco:Paragraph ;
+		c4o:hasContent :snippet-paragraph-4 .
+	:snippet-paragraph-4
+		snp:snippetURI """While the Genuine Semantic Publishing is, indeed, a desirable goal, it requires specific incentives to induce the authors to spend additional time creating the semantic enrichments to their articles, over and above that required to create the textual content. In recent experiments, my colleagues and I have undertaken in the context of the SAVE-SD workshops, described in [31], the clear trend is that, with the exception of the few individuals who believe in the Semantic Publishing as a public good, generally only a very low number of semantic statements are specified by the authors, even if we made available incentives or prizes for people who submit their scholarly papers in HTML+RDF format. The number of semantic statements in each of the papers presented during SAVE-SD workshops ranged from 24 to 903, with a median value of 46 (25th percentile 34, 75th percentile 175). The possible reasons for this behaviour, as identified by the study, included the lack of appropriate support, in the form of graphical user interfaces, that would facilitate the annotation of scholarly works with semantic data.""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p5#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-5 a doco:Paragraph ;
+		c4o:hasContent :snippet-paragraph-5 .
+	:snippet-paragraph-5
+		snp:snippetURI """However, I do not think that this is the principal reason that prevents the majority of authors from enhancing their papers with semantic annotations. I firmly believe that the main bottleneck preventing the concrete adoption of Genuine Semantic Publishing principles is the authors’ lack of available time. While interfaces may simplify the creation of semantic annotations, an author is still required to spend additional time and effort for this task, and often she does not have that time available. Thus, the most pragmatic method of encouraging authors to undertake this additional step is to provide services that do it for them in an automatic fashion by parsing the content that the authors have already written, thereby reducing the author’s task to one of checking these automated proposals for semantic annotations and then adding them to the document with a few clicks.""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1#> .
+@prefix p1nanopub: <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p1#> .
+@prefix p2nanopub: <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p2#> .
+@prefix p3nanopub: <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p3#> .
+@prefix p4nanopub: <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p4#> .
+@prefix p5nanopub: <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p5#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix co: <http://purl.org/co/> .
+@prefix c4o: <http://purl.org/spar/c4o> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:section-introduction a doco:Section , deo:Introduction  ;
+		po:containsAsHeader :section-introduction-title ;
+		po:contains
+			p1nanopub:paragraph-1 ,
+			p2nanopub:paragraph-2 ,
+			p3nanopub:paragraph-3 ,
+			p4nanopub:paragraph-4 ,
+			p5nanopub:paragraph-5 ;
+		  co:firstItem [
+		    co:itemContent :section-introduction-title ;
+		    co:nextItem [
+		      co:itemContent p1nanopub:paragraph-1 ;
+		      co:nextItem [
+			co:itemContent p2nanopub:paragraph-2 ;
+			co:nextItem [
+			  co:itemContent p3nanopub:paragraph-3 ;
+			  co:nextItem [
+			    co:itemContent p4nanopub:paragraph-4 ;
+			    co:nextItem [
+			      co:itemContent p5nanopub:paragraph-5 ] ] ] ] ] ] .
+	:section-introduction-title a doco:SectionTitle ;
+		c4o:hasContent "Print, digital, and semantic publishing" .
+
+	p1nanopub: npx:introduces p1nanopub:paragraph-1 .
+	p2nanopub: npx:introduces p2nanopub:paragraph-2 .
+	p3nanopub: npx:introduces p3nanopub:paragraph-3 .
+	p4nanopub: npx:introduces p4nanopub:paragraph-4 .
+	p5nanopub: npx:introduces p5nanopub:paragraph-5 .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p10#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-10 a doco:Paragraph ;
+		c4o:hasContent :snippet-paragraph-10 .
+	:snippet-paragraph-10
+		snp:snippetURI """The rest of the paper is organised as follows. In Section 2 I introduce some of the most important research works on this topic. In Section 3 I introduce the foundational theories that have been used to derive the approach for automating the enhancement of scholarly articles. In Section 4 I introduce CISE by describing the main conditions needed for running it and by explaining the algorithm defining the approach. In Section 5 I briefly discuss the results of implementing CISE on a corpus of scholarly articles stored in XML formats. In Section 6 I present some limitations of the approach, as well as future directions for my research on this subject. Finally, in Section 7 I conclude the paper, reprising the research question mentioned above.""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p1#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-1 a doco:Paragraph ;
+		c4o:hasContent """The scholarly communication domain has been involved in several revolutions concerning the way scientific knowledge has been shared in the past 300 years. Gutenberg’s introduction of the print (around 1450) together with the creation of formally-defined groups of scholars (e.g. the Royal Society founded in 1660) have permitted research works to be shared according to a well-known medium, i.e. printed volumes of scholarly journals. Notable examples of this era are Philosophical Transactions published by the Royal Society (first issued in 1776, and still in publication) and The Lancet (first issued in 1823, and currently published by Elsevier). The basic form of the scientific paper remained unchanged until the introduction of the Internet (considering ARPANET as its first implementation around 1960), which enabled research results to be rapidly communicated by means of e-mails. However, it was the advent of the World Wide Web (WWW) in 1989 that made possible the explosion of the Digital Publishing, namely the use of digital formats for the routine publication and distribution of scholarly works. In the last twenty years, the availability of new Web technologies and the reduction of digital storage have resulted in an incredible growth in the availability of scholarly material online, and in an accompanying acceleration of the publishing workflow. However, only with the subsequent advent of one specific set of Web technologies, namely Semantic Web technologies [2], have we started to talk about Semantic Publishing.""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> ;
+		 prov:hadPrimarySource <http://dx.doi.org/10.3233/DS-170012> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-13T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy  <https://orcid.org/0000-0002-7114-6459> ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-2 a doco:Paragraph ;
+		c4o:hasContent """Within the scholarly domain, Semantic Publishing concerns the use of Web and Semantic Web technologies and standards for enhancing a scholarly work semantically (by means of plain RDF statements [7], nano-publications [17], etc.) so as to improve its discoverability, interactivity, openness and (re-)usability for both humans and machines [35]. The assumptions of openness implicit in Semantic Publishing have been explicitly adopted for the publication of research data by the FAIR (Findable, Accessible, Interoperable, Re-usable) data principles [45]. Early examples of the semantic enrichment of scholarly works involved the use of manual (e.g. [36]) or (semi-)automatic post-publication processes (e.g. [1]) by people other than the original authors of such works.""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> ;
+		 prov:hadPrimarySource <http://dx.doi.org/10.3233/DS-170012> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-13T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy  <https://orcid.org/0000-0002-7114-6459> ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p3#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-3 a doco:Paragraph ;
+		c4o:hasContent :snippet-paragraph-3 .
+	:snippet-paragraph-3
+		snp:snippetURI """The misalignment between those who authored the original work and those who added semantic annotations to it is the focal point for discussion by the editors-in-chief of this journal in this introductory issue. Their point is that, following the early experimentation with Semantic Publishing, we should now start to push for and support what they call Genuine Semantic Publishing. This genuineness basically refers to the fact that the semantic enhancement of a scholarly work should be undertaken by the authors of that scholarly work at the time of writing. According to this perspective, the semantic annotations included within the scholarly work includes should be considered as proper part of the contribution and treated as such, including being subjected to proper peer review.""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p4#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-4 a doco:Paragraph ;
+		c4o:hasContent :snippet-paragraph-4 .
+	:snippet-paragraph-4
+		snp:snippetURI """While the Genuine Semantic Publishing is, indeed, a desirable goal, it requires specific incentives to induce the authors to spend additional time creating the semantic enrichments to their articles, over and above that required to create the textual content. In recent experiments, my colleagues and I have undertaken in the context of the SAVE-SD workshops, described in [31], the clear trend is that, with the exception of the few individuals who believe in the Semantic Publishing as a public good, generally only a very low number of semantic statements are specified by the authors, even if we made available incentives or prizes for people who submit their scholarly papers in HTML+RDF format. The number of semantic statements in each of the papers presented during SAVE-SD workshops ranged from 24 to 903, with a median value of 46 (25th percentile 34, 75th percentile 175). The possible reasons for this behaviour, as identified by the study, included the lack of appropriate support, in the form of graphical user interfaces, that would facilitate the annotation of scholarly works with semantic data.""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p5#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-5 a doco:Paragraph ;
+		c4o:hasContent :snippet-paragraph-5 .
+	:snippet-paragraph-5
+		snp:snippetURI """However, I do not think that this is the principal reason that prevents the majority of authors from enhancing their papers with semantic annotations. I firmly believe that the main bottleneck preventing the concrete adoption of Genuine Semantic Publishing principles is the authors’ lack of available time. While interfaces may simplify the creation of semantic annotations, an author is still required to spend additional time and effort for this task, and often she does not have that time available. Thus, the most pragmatic method of encouraging authors to undertake this additional step is to provide services that do it for them in an automatic fashion by parsing the content that the authors have already written, thereby reducing the author’s task to one of checking these automated proposals for semantic annotations and then adding them to the document with a few clicks.""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p6#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-6 a doco:Paragraph ;
+		c4o:hasContent :snippet-paragraph-6 .
+	:snippet-paragraph-6
+		snp:snippetURI """In recent years, several tools have been developed for the automatic annotation of scholarly texts according to one or more particular dimensions, e.g. by considering documents that are available in specific document formats – e.g. the SPAR Extractor Suite developed for the RASH format [31] – or that are written in a particular language such as English – e.g. FRED1 [16]. However, these tools are typically tied to certain requirements – in the aforementioned cases, the use of a specific markup for organising the document content and of a particular language for writing its text – that prevent their adoption in broader contexts. I wonder if we can propose an alternative approach that allows a machine to infer some of the semantic annotations for scholarly articles without considering the particular markup language used nor authoring language used.""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p7#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-7 a doco:Paragraph ;
+		c4o:hasContent :snippet-paragraph-7 .
+	:snippet-paragraph-7
+		snp:snippetURI """This is a Document Engineering issue, rather than a pure Computational Linguistics one. Thus, an important aspect to investigate is whether one can use the syntactic organisation of the text (i.e. the way the various parts of the article are related to each other) to enable the meaningful automatic semantic annotation of the article. It is possible to abstract this view into a more generic research question: “Can the purely syntactic organisation of the various parts of a scholarly article convey something about its semantic and rhetorical representation, and to what extent?”""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p8#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-8 a doco:Paragraph ;
+		c4o:hasContent :snippet-paragraph-8 .
+	:snippet-paragraph-8
+		snp:snippetURI """While I do not have a definite answer to that question, existing theories – such as the principle of compositionality [30] and the downward causation [3], which I discuss in more detail in Section 3 – seem to suggest that, under certain conditions, they can provide theoretical foundations for that question. Inspired by the way these theories have been used in several domains, I have developed a generic approach called compositional and iterative semantic enhancement, a.k.a. CISE (pronounced like size), that enables the automatic enhancement of scholarly articles solely by consideration of the containment between their components. This requires an iterative process in which each step provides additional semantic annotations to article components by applying specific rules to the enhancements generated by the previous steps.""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p9#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-9 a doco:Paragraph ;
+		c4o:hasContent :snippet-paragraph-9 .
+	:snippet-paragraph-9
+		snp:snippetURI """In order to prove the applicability of CISE, and thus to provide a partial answer to the aforementioned research question, my colleagues and I have implemented and run some CISE-based algorithms, which enable us to annotate various components of scholarly articles with information about their syntactic and semantic structures and basic rhetorical purposes. To do this, we use a collection of ontologies that form a kind of hierarchy that can be used to annotate different aspects a publication – i.e. syntactic containment, syntactic structure, structural semantics, and rhetorical components – with semantic statements. The outcomes of using these CISE-based algorithms are encouraging, and seem to suggest the feasibility of the whole approach.""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p1#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-1 a doco:Paragraph ;
+		c4o:hasContent :snippet-paragraph-1 .
+	:snippet-paragraph-1
+		snp:snippetURI """The scholarly communication domain has been involved in several revolutions concerning the way scientific knowledge has been shared in the past 300 years. Gutenberg’s introduction of the print (around 1450) together with the creation of formally-defined groups of scholars (e.g. the Royal Society founded in 1660) have permitted research works to be shared according to a well-known medium, i.e. printed volumes of scholarly journals. Notable examples of this era are Philosophical Transactions published by the Royal Society (first issued in 1776, and still in publication) and The Lancet (first issued in 1823, and currently published by Elsevier). The basic form of the scientific paper remained unchanged until the introduction of the Internet (considering ARPANET as its first implementation around 1960), which enabled research results to be rapidly communicated by means of e-mails. However, it was the advent of the World Wide Web (WWW) in 1989 that made possible the explosion of the Digital Publishing, namely the use of digital formats for the routine publication and distribution of scholarly works. In the last twenty years, the availability of new Web technologies and the reduction of digital storage have resulted in an incredible growth in the availability of scholarly material online, and in an accompanying acceleration of the publishing workflow. However, only with the subsequent advent of one specific set of Web technologies, namely Semantic Web technologies [2], have we started to talk about Semantic Publishing.""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-2 a doco:Paragraph ;
+		c4o:hasContent :snippet-paragraph-2 .
+	:snippet-paragraph-2
+		snp:snippetURI """Within the scholarly domain, Semantic Publishing concerns the use of Web and Semantic Web technologies
+and standards for enhancing a scholarly work semantically (by means of plain RDF statements
+[7], nano-publications [17], etc.) so as to improve its discoverability, interactivity, openness and
+(re-)usability for both humans and machines [35]. The assumptions of openness implicit in Semantic
+Publishing have been explicitly adopted for the publication of research data by the FAIR (Findable, Accessible,
+Interoperable, Re-usable) data principles [45]. Early examples of the semantic enrichment of
+scholarly works involved the use of manual (e.g. [36]) or (semi-)automatic post-publication processes
+(e.g. [1]) by people other than the original authors of such works""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p3#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-3 a doco:Paragraph ;
+		c4o:hasContent :snippet-paragraph-3 .
+	:snippet-paragraph-3
+		snp:snippetURI """The misalignment between those who authored the original work and those who added semantic annotations to it is the focal point for discussion by the editors-in-chief of this journal in this introductory issue. Their point is that, following the early experimentation with Semantic Publishing, we should now start to push for and support what they call Genuine Semantic Publishing. This genuineness basically refers to the fact that the semantic enhancement of a scholarly work should be undertaken by the authors of that scholarly work at the time of writing. According to this perspective, the semantic annotations included within the scholarly work includes should be considered as proper part of the contribution and treated as such, including being subjected to proper peer review.""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p4#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-4 a doco:Paragraph ;
+		c4o:hasContent :snippet-paragraph-4 .
+	:snippet-paragraph-4
+		snp:snippetURI """While the Genuine Semantic Publishing is, indeed, a desirable goal, it requires specific incentives to induce the authors to spend additional time creating the semantic enrichments to their articles, over and above that required to create the textual content. In recent experiments, my colleagues and I have undertaken in the context of the SAVE-SD workshops, described in [31], the clear trend is that, with the exception of the few individuals who believe in the Semantic Publishing as a public good, generally only a very low number of semantic statements are specified by the authors, even if we made available incentives or prizes for people who submit their scholarly papers in HTML+RDF format. The number of semantic statements in each of the papers presented during SAVE-SD workshops ranged from 24 to 903, with a median value of 46 (25th percentile 34, 75th percentile 175). The possible reasons for this behaviour, as identified by the study, included the lack of appropriate support, in the form of graphical user interfaces, that would facilitate the annotation of scholarly works with semantic data.""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p5#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-5 a doco:Paragraph ;
+		c4o:hasContent :snippet-paragraph-5 .
+	:snippet-paragraph-5
+		snp:snippetURI """However, I do not think that this is the principal reason that prevents the majority of authors from enhancing their papers with semantic annotations. I firmly believe that the main bottleneck preventing the concrete adoption of Genuine Semantic Publishing principles is the authors’ lack of available time. While interfaces may simplify the creation of semantic annotations, an author is still required to spend additional time and effort for this task, and often she does not have that time available. Thus, the most pragmatic method of encouraging authors to undertake this additional step is to provide services that do it for them in an automatic fashion by parsing the content that the authors have already written, thereby reducing the author’s task to one of checking these automated proposals for semantic annotations and then adding them to the document with a few clicks.""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1#> .
+@prefix p1nanopub: <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p1#> .
+@prefix p2nanopub: <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p2#> .
+@prefix p3nanopub: <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p3#> .
+@prefix p4nanopub: <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p4#> .
+@prefix p5nanopub: <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p5#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix co: <http://purl.org/co/> .
+@prefix c4o: <http://purl.org/spar/c4o> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:section-introduction a doco:Section , deo:Introduction  ;
+		po:containsAsHeader :section-introduction-title ;
+		po:contains
+			p1nanopub:paragraph-1 ,
+			p2nanopub:paragraph-2 ,
+			p3nanopub:paragraph-3 ,
+			p4nanopub:paragraph-4 ,
+			p5nanopub:paragraph-5 ;
+		  co:firstItem [
+		    co:itemContent :section-introduction-title ;
+		    co:nextItem [
+		      co:itemContent p1nanopub:paragraph-1 ;
+		      co:nextItem [
+			co:itemContent p2nanopub:paragraph-2 ;
+			co:nextItem [
+			  co:itemContent p3nanopub:paragraph-3 ;
+			  co:nextItem [
+			    co:itemContent p4nanopub:paragraph-4 ;
+			    co:nextItem [
+			      co:itemContent p5nanopub:paragraph-5 ] ] ] ] ] ] .
+	:section-introduction-title a doco:SectionTitle ;
+		c4o:hasContent "Print, digital, and semantic publishing" .
+
+	p1nanopub: npx:introduces p1nanopub:paragraph-1 .
+	p2nanopub: npx:introduces p2nanopub:paragraph-2 .
+	p3nanopub: npx:introduces p3nanopub:paragraph-3 .
+	p4nanopub: npx:introduces p4nanopub:paragraph-4 .
+	p5nanopub: npx:introduces p5nanopub:paragraph-5 .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p10#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-10 a doco:Paragraph ;
+		c4o:hasContent :snippet-paragraph-10 .
+	:snippet-paragraph-10
+		snp:snippetURI """The rest of the paper is organised as follows. In Section 2 I introduce some of the most important research works on this topic. In Section 3 I introduce the foundational theories that have been used to derive the approach for automating the enhancement of scholarly articles. In Section 4 I introduce CISE by describing the main conditions needed for running it and by explaining the algorithm defining the approach. In Section 5 I briefly discuss the results of implementing CISE on a corpus of scholarly articles stored in XML formats. In Section 6 I present some limitations of the approach, as well as future directions for my research on this subject. Finally, in Section 7 I conclude the paper, reprising the research question mentioned above.""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p1#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-1 a doco:Paragraph ;
+		c4o:hasContent """The scholarly communication domain has been involved in several revolutions concerning the way scientific knowledge has been shared in the past 300 years. Gutenberg’s introduction of the print (around 1450) together with the creation of formally-defined groups of scholars (e.g. the Royal Society founded in 1660) have permitted research works to be shared according to a well-known medium, i.e. printed volumes of scholarly journals. Notable examples of this era are Philosophical Transactions published by the Royal Society (first issued in 1776, and still in publication) and The Lancet (first issued in 1823, and currently published by Elsevier). The basic form of the scientific paper remained unchanged until the introduction of the Internet (considering ARPANET as its first implementation around 1960), which enabled research results to be rapidly communicated by means of e-mails. However, it was the advent of the World Wide Web (WWW) in 1989 that made possible the explosion of the Digital Publishing, namely the use of digital formats for the routine publication and distribution of scholarly works. In the last twenty years, the availability of new Web technologies and the reduction of digital storage have resulted in an incredible growth in the availability of scholarly material online, and in an accompanying acceleration of the publishing workflow. However, only with the subsequent advent of one specific set of Web technologies, namely Semantic Web technologies [2], have we started to talk about Semantic Publishing.""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> ;
+		 prov:hadPrimarySource <http://dx.doi.org/10.3233/DS-170012> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-13T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy  <https://orcid.org/0000-0002-7114-6459> ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-2 a doco:Paragraph ;
+		c4o:hasContent """Within the scholarly domain, Semantic Publishing concerns the use of Web and Semantic Web technologies and standards for enhancing a scholarly work semantically (by means of plain RDF statements [7], nano-publications [17], etc.) so as to improve its discoverability, interactivity, openness and (re-)usability for both humans and machines [35]. The assumptions of openness implicit in Semantic Publishing have been explicitly adopted for the publication of research data by the FAIR (Findable, Accessible, Interoperable, Re-usable) data principles [45]. Early examples of the semantic enrichment of scholarly works involved the use of manual (e.g. [36]) or (semi-)automatic post-publication processes (e.g. [1]) by people other than the original authors of such works.""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> ;
+		 prov:hadPrimarySource <http://dx.doi.org/10.3233/DS-170012> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-13T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy  <https://orcid.org/0000-0002-7114-6459> ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p3#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-3 a doco:Paragraph ;
+		c4o:hasContent :snippet-paragraph-3 .
+	:snippet-paragraph-3
+		snp:snippetURI """The misalignment between those who authored the original work and those who added semantic annotations to it is the focal point for discussion by the editors-in-chief of this journal in this introductory issue. Their point is that, following the early experimentation with Semantic Publishing, we should now start to push for and support what they call Genuine Semantic Publishing. This genuineness basically refers to the fact that the semantic enhancement of a scholarly work should be undertaken by the authors of that scholarly work at the time of writing. According to this perspective, the semantic annotations included within the scholarly work includes should be considered as proper part of the contribution and treated as such, including being subjected to proper peer review.""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p4#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-4 a doco:Paragraph ;
+		c4o:hasContent :snippet-paragraph-4 .
+	:snippet-paragraph-4
+		snp:snippetURI """While the Genuine Semantic Publishing is, indeed, a desirable goal, it requires specific incentives to induce the authors to spend additional time creating the semantic enrichments to their articles, over and above that required to create the textual content. In recent experiments, my colleagues and I have undertaken in the context of the SAVE-SD workshops, described in [31], the clear trend is that, with the exception of the few individuals who believe in the Semantic Publishing as a public good, generally only a very low number of semantic statements are specified by the authors, even if we made available incentives or prizes for people who submit their scholarly papers in HTML+RDF format. The number of semantic statements in each of the papers presented during SAVE-SD workshops ranged from 24 to 903, with a median value of 46 (25th percentile 34, 75th percentile 175). The possible reasons for this behaviour, as identified by the study, included the lack of appropriate support, in the form of graphical user interfaces, that would facilitate the annotation of scholarly works with semantic data.""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p5#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-5 a doco:Paragraph ;
+		c4o:hasContent :snippet-paragraph-5 .
+	:snippet-paragraph-5
+		snp:snippetURI """However, I do not think that this is the principal reason that prevents the majority of authors from enhancing their papers with semantic annotations. I firmly believe that the main bottleneck preventing the concrete adoption of Genuine Semantic Publishing principles is the authors’ lack of available time. While interfaces may simplify the creation of semantic annotations, an author is still required to spend additional time and effort for this task, and often she does not have that time available. Thus, the most pragmatic method of encouraging authors to undertake this additional step is to provide services that do it for them in an automatic fashion by parsing the content that the authors have already written, thereby reducing the author’s task to one of checking these automated proposals for semantic annotations and then adding them to the document with a few clicks.""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p6#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-6 a doco:Paragraph ;
+		c4o:hasContent :snippet-paragraph-6 .
+	:snippet-paragraph-6
+		snp:snippetURI """In recent years, several tools have been developed for the automatic annotation of scholarly texts according to one or more particular dimensions, e.g. by considering documents that are available in specific document formats – e.g. the SPAR Extractor Suite developed for the RASH format [31] – or that are written in a particular language such as English – e.g. FRED1 [16]. However, these tools are typically tied to certain requirements – in the aforementioned cases, the use of a specific markup for organising the document content and of a particular language for writing its text – that prevent their adoption in broader contexts. I wonder if we can propose an alternative approach that allows a machine to infer some of the semantic annotations for scholarly articles without considering the particular markup language used nor authoring language used.""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p7#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-7 a doco:Paragraph ;
+		c4o:hasContent :snippet-paragraph-7 .
+	:snippet-paragraph-7
+		snp:snippetURI """This is a Document Engineering issue, rather than a pure Computational Linguistics one. Thus, an important aspect to investigate is whether one can use the syntactic organisation of the text (i.e. the way the various parts of the article are related to each other) to enable the meaningful automatic semantic annotation of the article. It is possible to abstract this view into a more generic research question: “Can the purely syntactic organisation of the various parts of a scholarly article convey something about its semantic and rhetorical representation, and to what extent?”""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p8#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-8 a doco:Paragraph ;
+		c4o:hasContent :snippet-paragraph-8 .
+	:snippet-paragraph-8
+		snp:snippetURI """While I do not have a definite answer to that question, existing theories – such as the principle of compositionality [30] and the downward causation [3], which I discuss in more detail in Section 3 – seem to suggest that, under certain conditions, they can provide theoretical foundations for that question. Inspired by the way these theories have been used in several domains, I have developed a generic approach called compositional and iterative semantic enhancement, a.k.a. CISE (pronounced like size), that enables the automatic enhancement of scholarly articles solely by consideration of the containment between their components. This requires an iterative process in which each step provides additional semantic annotations to article components by applying specific rules to the enhancements generated by the previous steps.""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+
+@prefix : <http://purl.org/nanopub/temp/linkflows/sample-paper/camera-ready/s1_p9#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix biro: <http://purl.org/spar/biro/> .
+@prefix snp: <http://linkflows.com/snippets/> .
+@prefix ex: <http://example.org/> .
+
+:Head {
+	: np:hasAssertion :assertion ;
+		np:hasProvenance :provenance ;
+		np:hasPublicationInfo :pubinfo ;
+		a np:Nanopublication .
+}
+
+:assertion {
+	:paragraph-9 a doco:Paragraph ;
+		c4o:hasContent :snippet-paragraph-9 .
+	:snippet-paragraph-9
+		snp:snippetURI """In order to prove the applicability of CISE, and thus to provide a partial answer to the aforementioned research question, my colleagues and I have implemented and run some CISE-based algorithms, which enable us to annotate various components of scholarly articles with information about their syntactic and semantic structures and basic rhetorical purposes. To do this, we use a collection of ontologies that form a kind of hierarchy that can be used to annotate different aspects a publication – i.e. syntactic containment, syntactic structure, structural semantics, and rhetorical components – with semantic statements. The outcomes of using these CISE-based algorithms are encouraging, and seem to suggest the feasibility of the whole approach.""" .
+}
+
+:provenance {
+	:assertion prov:wasAttributedTo <https://orcid.org/0000-0003-0530-4305> .
+}
+
+:pubinfo {
+	: dc:created "2018-09-10T18:05:11+01:00"^^xsd:dateTime ;
+		pav:createdBy ex:linkflowsAuthoringTool ;
+		a npx:ExampleNanopub .
+}
+

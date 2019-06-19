@@ -1,0 +1,18 @@
+R1: I should also confess at the start that I found this paper difficult to read and understand. Much of that is because it requires more knowledge of formalisms than I have; part of it I suspect is because of issues with the article itself.
+> I have removed and/or reduced several aspects related to the theoretical explanations of the approach, and added several examples so as to make more clearer the way CISE works.
+
+R1: My difficulty with this article — probably a misunderstanding — is that it seems to suggest that this is already achievable (although the suggestion in surrounded by, in my opinion, unnecessarily complex and slightly flakey discussion of Curry-Howard isomorphism) and that the rest of the aims can be achieved by layering on further semantic transformations.
+> I have reworded the text so as to explicitly say that the approach proposed (i.e. CISE), and its implementations, have been experimented using a real set of scholarly articles, but that these experiments provide only a partial, even if positive, answer to the main research question presented in the introduction, i.e. “can the pure syntactic organisation of the various parts composing a scholarly article convey somehow its semantic and rhetorical representation, and to what extent?”.
+
+R1: I think if this article was saying “here is a collection of ontologies and frameworks that form a kind of hierarchy that could in an ideal world be used to describe the perfect semantic publication; and maybe you can even reason about the relationships between the layers” then I’d be a lot more comfortable with it. As it stands, either I’m not following the formal glue that’s used to hold the different steps together, or perhaps the formal glue isn’t quite as cohesive as it might be. Or some combination of these two things.
+> I've explicated better these aspects in the introduction as well as in section 4, section 5 and section 6 of this revision.
+
+R1: I’d suggest simplifying the formalisms (I really don’t think they add clarity), and including concrete examples. I think then it could make an excellent position paper that unifies several already significant pieces of work.
+> The formalisms have been largely reduced, and the article has been largely revised so as to introduce several examples for explaining all the theoretical foundations and the steps of CISE and its implementations.
+
+R1: "Automating the Semantic Publishing" -> should this be “Automating Semantic Publishing” ? I’m not sure what the definite article is doing here.
+I think the sub title is too dense for a general CS audience (or even for a ‘data science’ audience). It may make sense to someone that’s into formal methods. Maybe.
+> I've removed the subtitle.
+
+R1: Throughout the article needs a fair amount of attention to the written English; too many minor infelicities to list here. Because the article is technically dense, these risk tripping the reader rather too often.
+> I've revised the whole article and corrected all the typos and grammatical mistakes I've found.

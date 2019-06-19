@@ -1,0 +1,21 @@
+# paper snippets:
+# ?
+
+# main classes for review comment:
+# - Comment
+# - ReviewComment (subclass of Comment)
+
+# dimensions (classes):
+# - SyntaxComment, StyleComment, ContentComment (disjoint)
+# - NegativeComment, NeutralComment, PositiveComment (disjoint)
+# - NeedsToBeAddressedComment, SuggestionComment, NoActionNeededComment 
+(disjoint)
+
+# description (property):
+# - dct:description (?)
+
+# impact (property):
+# - hasImpact (range: 1, 2, 3, 4, 5)
+
+# author response/action:
+# ?
