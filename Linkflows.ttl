@@ -46,6 +46,7 @@
 
 :hasCommentText rdfs:subPropertyOf dcterms:description .
 :hasCommentText rdfs:domain :Comment .
+:hasCommentText rdfs:range xsd:string .
 
 :hasCommentAuthor rdfs:subPropertyOf dc:creator .
 :hasCommentAuthor rdfs:domain :Comment .
