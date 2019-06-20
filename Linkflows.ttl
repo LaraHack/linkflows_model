@@ -47,8 +47,7 @@
 :isUpdateOf rdfs:domain prov:Entity .
 :isUpdateOf rdfs:range prov:Entity .
 
-# dimensions (classes):
-# - NeedsToBeAddressedComment, SuggestionComment, NoActionNeededComment
+# Dimensions (classes)
 
 :SyntaxComment rdfs:subClassOf :ReviewComment .
 :StyleComment rdfs:subClassOf :ReviewComment .
@@ -67,6 +66,15 @@
 :NeutralComment owl:disjointWith :PositiveComment .
 :NegativeComment owl:disjointWith :PositiveComment .
 
+# Action:
+# - NeedsToBeAddressedComment, SuggestionComment, NoActionNeededComment
+:ActionNeededComment rdfs:subClassOf :ReviewComment .
+:SuggestionComment rdfs:subClassOf :ReviewComment .
+:NoActionNeededComment rdfs:subClassOf :ReviewComment .
+
+:ActionNeededComment owl:disjointWith :SuggestionComment .
+:SuggestionComment owl:disjointWith :NoActionNeededComment .
+:ActionNeededComment owl:disjointWith :NoActionNeededComment .
 
 # Properties:
 
