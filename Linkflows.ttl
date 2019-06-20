@@ -1,21 +1,89 @@
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+@prefix dcterms: <http://purl.org/dc/terms/>
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov : <http://www.w3.org/ns/prov#>
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix wd: <https://www.w3.org/TR/annotation-model/#annotations> .
+
+@prefix : <http://www.linkflows.com/#> # replace this
+
+# General description:
+<http://www.linkflows.com/#> a owl:Ontology ;
+	owl:imports <http://purl.org/spar/datacite/> ; # more here
+	rdfs:comment "This vocabulary represents a finer-grained model for scientific reviews."@en ;
+	dcterms:modified "2019-06-19"^^xsd:date ;
+	dc:contributor "Tobias Kuhn"^^xsd:string ;
+	dcterms:created "2018-09-01"^^xsd:date ;
+	dc:creator <https://orcid.org/0000-0002-7114-6459> ;
+	dcterms:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
+	owl:versionInfo "1.0" ;
+	vann:preferredNamespaceUri "http://www.linkflows.com/#" ; # replace here with prefix
+	dc:title "Linkflows reviews"@en ;
+	dc:publisher <http://http://ucds.cs.vu.nl/> ;
+	vann:preferredNamespacePrefix "lkf"^^xsd:string .
+
+
 # paper snippets:
-# ?
+:Snippet a owl:Class ;
+  rdfs:subClassOf prov:Entity .
 
 # main classes for review comment:
 # - Comment
 # - ReviewComment (subclass of Comment)
 
+:Comment a owl:Class ;
+  rdfs:subClassOf prov:Entity .
+
+# actor, peer reviewer, editor, other...
+:Person a owl:Class ;
+  rdfs:subClassOf prov:Actor .
+
 # dimensions (classes):
-# - SyntaxComment, StyleComment, ContentComment (disjoint)
-# - NegativeComment, NeutralComment, PositiveComment (disjoint)
-# - NeedsToBeAddressedComment, SuggestionComment, NoActionNeededComment 
-(disjoint)
+# - NeedsToBeAddressedComment, SuggestionComment, NoActionNeededComment
 
-# description (property):
-# - dct:description (?)
+# Aspect type discussed in the (review) comment: syntax, style or content
+:Aspect rdfs:subClassOf :Comment .
+:Aspect rdfs:label "The main aspect that the review comment mentions about the text snippet" .
+:Aspect dcterms:description "Aspect discussed by the review comment" .
 
-# impact (property):
-# - hasImpact (range: 1, 2, 3, 4, 5)
+:SyntaxComment rdfs:subClassOf :Aspect .
+:StyleComment rdfs:subClassOf :Aspect .
+:ContentComment rdfs:subClassOf :Aspect .
+
+:SyntaxComment owl:disjointWith :StyleComment .
+:StyleComment owl:disjointWith :ContentComment .
+
+# Point raised in the review comment: negative, neutral, positive
+:Sentiment rdfs:subClassOf :Comment .
+:Sentiment rdfs:label "Positivity or negativity" .
+:Sentiment dcterms:description "POint raised by the review comment" .
+
+:NegativeComment rdfs:subClassOf :Sentiment .
+:NeutralComment rdfs:subClassOf :Sentiment .
+:PositiveComment rdfs:subClassOf :Sentiment .
+
+:NegativeComment owl:disjointWith :NeutralComment .
+:NeutralComment owl:disjointWith :PositiveComment .
+
+
+# Properties:
+
+# type of text snippet considering the structure of the "classical" article
+:hasTarget rdf:type rdf:Property .
+:hasTarget rdfs:label "The type of text node " .
+:hasTarget dcterms:description "" .
+:hasTarget rdfs:domain :Comment .
+:hasTarget rdfs:range  . # range: leaf, intermediary, root -> see subclasses of each from DOCO
+
+# impact:
+:hasImpact rdf:type rdf:Property .
+:hasImpact rdfs:label "Overall impact on quality" .
+:hasImpact dcterms:description "the impact of the point raised in the review comment on the overall quality of the article according to the reviewer. For negative points, the positive impact if the point is fully addressed. For positive points, the negative impact if this point were not true" .
+:hasImpact rdfs:domain :ReviewComment .
+:hasImpact rdfs:range  . # range: 1, 2, 3, 4, 5
 
 # author response/action:
-# ?
+#
