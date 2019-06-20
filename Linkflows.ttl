@@ -12,7 +12,6 @@
 
 # General description:
 <https://github.com/LaraHack/linkflows_model/blob/master/Linkflows.ttl#> a owl:Ontology ;
-	owl:imports <http://purl.org/spar/datacite/> ; # more here
 	rdfs:comment "This vocabulary represents a finer-grained model for scientific reviews."@en ;
 	dcterms:modified "2019-06-19"^^xsd:date ;
 	dc:contributor "Tobias Kuhn"^^xsd:string ;
