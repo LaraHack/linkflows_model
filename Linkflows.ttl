@@ -8,10 +8,10 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix wd: <https://www.w3.org/TR/annotation-model/#annotations> .
 
-@prefix : <http://www.linkflows.com/#> . # replace this
+@prefix : <https://github.com/LaraHack/linkflows_model/blob/master/Linkflows.ttl> .
 
 # General description:
-<http://www.linkflows.com/#> a owl:Ontology ;
+<https://github.com/LaraHack/linkflows_model/blob/master/Linkflows.ttl> a owl:Ontology ;
 	owl:imports <http://purl.org/spar/datacite/> ; # more here
 	rdfs:comment "This vocabulary represents a finer-grained model for scientific reviews."@en ;
 	dcterms:modified "2019-06-19"^^xsd:date ;
@@ -20,7 +20,7 @@
 	dc:creator <https://orcid.org/0000-0002-7114-6459> ;
 	dcterms:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
 	owl:versionInfo "1.0" ;
-	vann:preferredNamespaceUri "http://www.linkflows.com/#" ; # replace here with prefix
+	vann:preferredNamespaceUri "https://github.com/LaraHack/linkflows_model/blob/master/Linkflows.ttl" ;
 	dc:title "Linkflows reviews"@en ;
 	dc:publisher <http://http://ucds.cs.vu.nl/> ;
 	vann:preferredNamespacePrefix "lkf"^^xsd:string .
@@ -29,6 +29,8 @@
 :Comment a owl:Class ;
   rdfs:subClassOf prov:Entity .
 :ReviewComment rdfs:subClassOf :Comment .
+:ResponseComment rdfs:subClassOf :Comment .
+:ActionCheckComment rdfs:subClassOf :Comment .
 
 # actor, peer reviewer, editor, other...
 :Person a owl:Class ;
@@ -40,7 +42,7 @@
 :refersTo rdfs:range prov:Entity .
 
 :isResponseTo rdf:type rdf:Property .
-:isResponseTo rdfs:domain :Comment .
+:isResponseTo rdfs:domain :ResponseComment .
 :isResponseTo rdfs:range :Comment .
 
 :isUpdateOf rdf:type rdf:Property .
@@ -67,7 +69,6 @@
 :NegativeComment owl:disjointWith :PositiveComment .
 
 # Action:
-# - NeedsToBeAddressedComment, SuggestionComment, NoActionNeededComment
 :ActionNeededComment rdfs:subClassOf :ReviewComment .
 :SuggestionComment rdfs:subClassOf :ReviewComment .
 :NoActionNeededComment rdfs:subClassOf :ReviewComment .
@@ -76,10 +77,19 @@
 :SuggestionComment owl:disjointWith :NoActionNeededComment .
 :ActionNeededComment owl:disjointWith :NoActionNeededComment .
 
-# Response:
-:Addressed rdfs:subClassOf :ReviewComment .
-:NotAddressed rdfs:subClassOf :ReviewComment .
-:PartiallyAddressed rdfs:subClassOf :ReviewComment .
+# Response action:
+:Addressed rdfs:subClassOf :ActionCheckComment .
+:NotAddressed rdfs:subClassOf :ActionCheckComment .
+:PartiallyAddressed rdfs:subClassOf :ActionCheckComment .
+
+:Addressed owl:disjointWith :NotAddressed .
+:NotAddressed owl:disjointWith :PartiallyAddressed .
+:Addressed owl:disjointWith :PartiallyAddressed .
+
+# Response reply:
+:AgreementComment rdfs:subClassOf :ResponseComment .
+:DisagreementComment rdfs:subClassOf :ResponseComment .
+:PartialAgreementComment rdfs:subClassOf :ResponseComment .
 
 # Properties:
 # impact:
