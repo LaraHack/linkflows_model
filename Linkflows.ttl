@@ -25,65 +25,49 @@
 	dc:publisher <http://http://ucds.cs.vu.nl/> ;
 	vann:preferredNamespacePrefix "lkf"^^xsd:string .
 
-
-# paper snippets:
-:Snippet a owl:Class ;
-  rdfs:subClassOf prov:Entity .
-
-# main classes for review comment:
-# - Comment
-# - ReviewComment (subclass of Comment)
-
+# main classes for review comment
 :Comment a owl:Class ;
   rdfs:subClassOf prov:Entity .
+:ReviewComment rdfs:subClassOf :Comment .
 
 # actor, peer reviewer, editor, other...
 :Person a owl:Class ;
   rdfs:subClassOf prov:Actor .
 
+# General properties:
+:refersTo rdf:type rdf:Property .
+:refersTo rdfs:domain :Comment .
+:refersTo rdfs:range prov:Entity .
+
 # dimensions (classes):
 # - NeedsToBeAddressedComment, SuggestionComment, NoActionNeededComment
 
-# Aspect type discussed in the (review) comment: syntax, style or content
-:Aspect rdfs:subClassOf :Comment .
-:Aspect rdfs:label "The main aspect that the review comment mentions about the text snippet" .
-:Aspect dcterms:description "Aspect discussed by the review comment" .
-
-:SyntaxComment rdfs:subClassOf :Aspect .
-:StyleComment rdfs:subClassOf :Aspect .
-:ContentComment rdfs:subClassOf :Aspect .
+:SyntaxComment rdfs:subClassOf :ReviewComment .
+:StyleComment rdfs:subClassOf :ReviewComment .
+:ContentComment rdfs:subClassOf :ReviewComment .
 
 :SyntaxComment owl:disjointWith :StyleComment .
 :StyleComment owl:disjointWith :ContentComment .
+:SyntaxComment owl:disjointWith :ContentComment .
 
 # Point raised in the review comment: negative, neutral, positive
-:Sentiment rdfs:subClassOf :Comment .
-:Sentiment rdfs:label "Positivity or negativity" .
-:Sentiment dcterms:description "POint raised by the review comment" .
-
-:NegativeComment rdfs:subClassOf :Sentiment .
-:NeutralComment rdfs:subClassOf :Sentiment .
-:PositiveComment rdfs:subClassOf :Sentiment .
+:NegativeComment rdfs:subClassOf :ReviewComment .
+:NeutralComment rdfs:subClassOf :ReviewComment .
+:PositiveComment rdfs:subClassOf :ReviewComment .
 
 :NegativeComment owl:disjointWith :NeutralComment .
 :NeutralComment owl:disjointWith :PositiveComment .
+:NegativeComment owl:disjointWith :PositiveComment .
 
 
 # Properties:
 
-# type of text snippet considering the structure of the "classical" article
-:hasTarget rdf:type rdf:Property .
-:hasTarget rdfs:label "The type of text node " .
-:hasTarget dcterms:description "" .
-:hasTarget rdfs:domain :Comment .
-:hasTarget rdfs:range  . # range: leaf, intermediary, root -> see subclasses of each from DOCO
-
 # impact:
-:hasImpact rdf:type rdf:Property .
+:hasImpact rdf:type owl:DatatypeProperty .
 :hasImpact rdfs:label "Overall impact on quality" .
 :hasImpact dcterms:description "the impact of the point raised in the review comment on the overall quality of the article according to the reviewer. For negative points, the positive impact if the point is fully addressed. For positive points, the negative impact if this point were not true" .
 :hasImpact rdfs:domain :ReviewComment .
-:hasImpact rdfs:range  . # range: 1, 2, 3, 4, 5
+:hasImpact rdfs:range xsd:positiveInteger .
 
 # author response/action:
 #
