@@ -39,6 +39,14 @@
 :refersTo rdfs:domain :Comment .
 :refersTo rdfs:range prov:Entity .
 
+:isResponseTo rdf:type rdf:Property .
+:isResponseTo rdfs:domain :Comment .
+:isResponseTo rdfs:range :Comment .
+
+:isUpdateOf rdf:type rdf:Property .
+:isUpdateOf rdfs:domain prov:Entity .
+:isUpdateOf rdfs:range prov:Entity .
+
 # dimensions (classes):
 # - NeedsToBeAddressedComment, SuggestionComment, NoActionNeededComment
 
