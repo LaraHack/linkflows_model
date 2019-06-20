@@ -32,10 +32,6 @@
 :ResponseComment rdfs:subClassOf :Comment .
 :ActionCheckComment rdfs:subClassOf :Comment .
 
-# actor, peer reviewer, editor, other...
-:Person a owl:Class ;
-  rdfs:subClassOf prov:Actor .
-
 # General properties:
 :refersTo rdf:type rdf:Property .
 :refersTo rdfs:domain :Comment .
@@ -48,6 +44,13 @@
 :isUpdateOf rdf:type rdf:Property .
 :isUpdateOf rdfs:domain prov:Entity .
 :isUpdateOf rdfs:range prov:Entity .
+
+:hasCommentText rdfs:subPropertyOf dcterms:description .
+:hasCommentText rdfs:domain :Comment .
+
+:hasCommentAuthor rdfs:subPropertyOf dc:creator .
+:hasCommentAuthor rdfs:domain :Comment .
+:hasCommentAuthor rdfs:range prov:Agent .
 
 # Dimensions (classes)
 
