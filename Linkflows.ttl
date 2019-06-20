@@ -76,12 +76,16 @@
 :SuggestionComment owl:disjointWith :NoActionNeededComment .
 :ActionNeededComment owl:disjointWith :NoActionNeededComment .
 
-# Properties:
+# Response:
+:Addressed rdfs:subClassOf :ReviewComment .
+:NotAddressed rdfs:subClassOf :ReviewComment .
+:PartiallyAddressed rdfs:subClassOf :ReviewComment .
 
+# Properties:
 # impact:
 :hasImpact rdf:type owl:DatatypeProperty .
 :hasImpact rdfs:label "Overall impact on quality" .
-:hasImpact dcterms:description "the impact of the point raised in the review comment on the overall quality of the article according to the reviewer. For negative points, the positive impact if the point is fully addressed. For positive points, the negative impact if this point were not true" .
+#:hasImpact dcterms:description "the impact of the point raised in the review comment on the overall quality of the article according to the reviewer. For negative points, the positive impact if the point is fully addressed. For positive points, the negative impact if this point were not true" .
 :hasImpact rdfs:domain :ReviewComment .
 :hasImpact rdfs:range xsd:positiveInteger .
 
