@@ -81,13 +81,13 @@
 :ActionNeededComment owl:disjointWith :NoActionNeededComment .
 
 # Response action:
-:Addressed rdfs:subClassOf :ActionCheckComment .
-:NotAddressed rdfs:subClassOf :ActionCheckComment .
-:PartiallyAddressed rdfs:subClassOf :ActionCheckComment .
+:PointAddressedComment rdfs:subClassOf :ActionCheckComment .
+:PointPartiallyAddressedComment rdfs:subClassOf :ActionCheckComment .
+:PointNotAddressedComment rdfs:subClassOf :ActionCheckComment .
 
-:Addressed owl:disjointWith :NotAddressed .
-:NotAddressed owl:disjointWith :PartiallyAddressed .
-:Addressed owl:disjointWith :PartiallyAddressed .
+:PointAddressedComment owl:disjointWith :PointNotAddressedComment .
+:PointNotAddressedComment owl:disjointWith :PartiallyAddressed .
+:PointAddressedComment owl:disjointWith :PointPartiallyAddressedComment .
 
 # Response reply:
 :AgreementComment rdfs:subClassOf :ResponseComment .
