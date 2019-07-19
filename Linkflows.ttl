@@ -86,7 +86,7 @@
 :PointNotAddressedComment rdfs:subClassOf :ActionCheckComment .
 
 :PointAddressedComment owl:disjointWith :PointNotAddressedComment .
-:PointNotAddressedComment owl:disjointWith :PartiallyAddressed .
+:PointNotAddressedComment owl:disjointWith :PointPartiallyAddressedComment .
 :PointAddressedComment owl:disjointWith :PointPartiallyAddressedComment .
 
 # Response reply:
