@@ -2,7 +2,7 @@
 
 Linkflows model of reviewing
 
-An ontology for granular and semantic reviewing. Visualization with the online WebVOWL tool: \url{http://www.visualdataweb.de/webvowl/\#iri=https://raw.githubusercontent.com/LaraHack/linkflows_model/master/Linkflows.ttl}}
+An ontology for granular and semantic reviewing. Visualization with the online WebVOWL tool: http://www.visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/LaraHack/linkflows_model/master/Linkflows.ttl
 
 The main class of the ontology is the \textit{Comment} class, which includes review comments (subclass \textit{ReviewComment}), on which we focus here, but the class also includes general text annotations or any kind of comment about a text snippet that comes with a dereferenceable URI.
 The general properties of the model are \textit{refersTo}, which connects a comment to the entity the comment is about, \textit{isResponseTo}, which declares that a comment is a response to another comment, \textit{isUpdateOf}, which connects an entity such as a comment to its previous version, \textit{hasCommentText}, which links to the text content of a comment, and \textit{hasCommentAuthor}, which declares the person who wrote a comment.
