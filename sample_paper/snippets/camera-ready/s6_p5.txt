@@ -1,1 +1,0 @@
-It might also be possible to extend CISE to the remaining higher layers introduced in Section 3, each defined by a specific ontology: annotations about citation functions (target ontology: CiTO [32]), argumentative organisation (target ontology: AMO), article categorization (target ontology: FaBiO [32]), and discipline clustering (target ontology: DBpedia Ontology [23]).

@@ -1,1 +1,0 @@
-Alexandru Constantin, Silvio Peroni, Steve Pettifer, David M. Shotton, Fabio Vitali (2016). The Document Components Ontology (DoCO). Semantic Web, 7 (2): 167-181. DOI: https://doi.org/10.3233/SW-150177

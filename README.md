@@ -1,29 +1,17 @@
 # linkflows_model
-A model for linked workflows together with instantiations
 
-How to model a workflow? What are the possiblities?
+Linkflows model of reviewing
 
-1) It is up to the viewer to define it as interconnected activities
+An ontology for granular and semantic reviewing. Visualization with the online WebVOWL tool: \url{http://www.visualdataweb.de/webvowl/\#iri=https://raw.githubusercontent.com/LaraHack/linkflows_model/master/Linkflows.ttl}}
 
-2) A fixed sequence where the workflow is a separate node that is connected to activities
+The main class of the ontology is the \textit{Comment} class, which includes review comments (subclass \textit{ReviewComment}), on which we focus here, but the class also includes general text annotations or any kind of comment about a text snippet that comes with a dereferenceable URI.
+The general properties of the model are \textit{refersTo}, which connects a comment to the entity the comment is about, \textit{isResponseTo}, which declares that a comment is a response to another comment, \textit{isUpdateOf}, which connects an entity such as a comment to its previous version, \textit{hasCommentText}, which links to the text content of a comment, and \textit{hasCommentAuthor}, which declares the person who wrote a comment.
 
-3) Have a workflow definition: execution is possible with/without its definition
+Our model defines three dimensions for review comments with different categories, each defined as subclasses of the class \textit{ReviewComment}, which form the core of our semantic representation of reviews. The first dimension is about whether the point raised in the review comment is about individual spelling or grammar issues (\textit{SyntaxComment}), the general style of the text including text structure, text flow, text ordering, and consistent wording (\textit{StyleComment}), or the content of the text, e.g. about missing literature, the presented arguments, or the validity of the findings (\textit{ContentComment}). The second aspect is the positivity/negativity of the review comment: \textit{PositiveComment} for review comments that mainly raise positive points, \textit{NeutralComment} for neutral or balanced points raised, and \textit{NegativeComment} for the cases with mainly negative points. The third dimension captures whether an action is needed in response to the review comment (according to the reviewer): \textit{ActionNeededComment} means that the reviewer thinks his or her comment necessarily needs to be addressed by the author; \textit{SuggestionComment} stands for comments that may or may not be addressed; and \textit{NoActionNeededComment} represents the comments that do not need to be addressed, such as plain observations. On top of that, we define a datatype property \textit{hasImpact} that takes an integer from 1 to 5 to represent the extent of the impact of the point raised in the review comment on the overall quality of the article according to the reviewer. For negative comments this score indicates what would be the positive impact if the point is fully addressed, while for positive points it indicates what would be the negative impact if this point were not true.
 
+To further clarify these dimensions and how they could be implemented in an actual reviewing system, we show a mockup of such an interface in Figure Mock interface implementing the Linkflows model for reviewing. The entries reported in the interface correspond to the review dimensions identified in the model.}}
 
-Some ideas:
-* Workflow definition
-..* another node in the network, decouple from actual activities that are there
-..* formally defined, automatically induce the rest; search for what has just happened
+For representing the interaction between reviewers and authors and follow-up actions that are necessary or requested by the reviewer, the \textit{ResponseComment} and \textit{ActionCheckComment} were created as subclasses of \textit{Comment}.
+The author of the text snippet that was commented upon can agree, disagree, or partially agree with the review comment of the reviewer and they can indicate this classifying their response comment accordingly as \textit{AgreementComment}, \textit{PartialAgreementComment}, or \textit{DisagreementComment}.
 
-* Focus on actions that actors perform on a paper, not at the current set of actions that have already taken place
-* Past and future in a decentralized manner
-* Use [PROV-O](https://www.w3.org/TR/prov-o/); the entity can be anything; do the nodes in the network need to only be digital ?!
-* Include computational workflows as well
-* Which things changed, which review had the biggest impact?
-
-Ontologies in Turtle:
-* define prefixes
-* declare classes and properties
-* declare domains and ranges
-* declare subclasses and subproperties
-* extra: what you can say about properties
+Finally, reviewers or editors can indicate in another follow-up comment whether they think that the author indeed addressed the point raised by the reviewer (to which they might have agreed, disagreed, or partially agreed). This can be expressed by the subclasses \textit{PointAddressedComment}, \textit{PointPartiallyAddressedComment}, and \textit{PointNotAddressedComment}.

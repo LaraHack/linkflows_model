@@ -1,5 +1,0 @@
-Thus, a possible solution for developing flexible Semantic Publishing tools that allow the automatic annotation of a scholarly document should at least be independent from:
-
-the markup format used for storing the document;
-
-the language used for writing the document content.

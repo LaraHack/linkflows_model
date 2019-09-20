@@ -1,1 +1,0 @@
-Angelo Di Iorio, Silvio Peroni, Francesco Poggi, Fabio Vitali, David Shotton (2013). Recognising document components in XML-based academic articles. In Proceedings of the 2013 ACM Symposium on Document Engineering (DocEng 2013): 181-184. DOI: https://doi.org/10.1145/2494266.2494319

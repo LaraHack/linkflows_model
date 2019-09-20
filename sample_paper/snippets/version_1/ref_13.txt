@@ -1,1 +1,0 @@
-Johan Bos (2008). Wide-Coverage Semantic Analysis with Boxer. In Proceedings of the 2008 Conference on Semantics in Text Processing (STEP 2008): 277-286. DOI: https://doi.org/10.3115/1626481.1626503

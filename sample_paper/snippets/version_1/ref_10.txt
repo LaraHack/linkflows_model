@@ -1,1 +1,0 @@
-William A. Howard (1980). The formulae-as-types notion of construction. In Jonathan P. Seldin, J. Roger Hindley, To H.B. Curry: Essays on Combinatory Logic, Lambda Calculus and Formalism: 479-490. Boston, MA: Academic Press. ISBN: 978-0-12-349050-6. http://www.dcc.fc.up.pt/~acm/howard.pdf (last visited May 30, 2017)

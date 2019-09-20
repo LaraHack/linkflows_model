@@ -1,1 +1,0 @@
-Silvio Peroni, David Shotton (2012). FaBiO and CiTO: Ontologies for describing bibliographic resources and citations. Web Semantics, 17: 33-43. DOI: https://doi.org/10.1016/j.websem.2012.08.001

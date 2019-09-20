@@ -1,1 +1,0 @@
-Angelo Di Iorio, Silvio Peroni, Francesco Poggi, Fabio Vitali (2014). Dealing with structural patterns of XML documents. Journal of the Association for Information Science and Technologies, 65 (9): 1884-1900. DOI: https://doi.org/10.1002/asi.23088

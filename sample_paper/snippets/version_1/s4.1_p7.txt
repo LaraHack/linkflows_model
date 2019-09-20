@@ -1,5 +1,0 @@
-The general goal of the process is to understand to what extent patterns are used in several sets of documents, in particular when the markup language used for storing the document content (e.g. TEI [22] and DocBook [21]) is not inherently pattern-based – i.e. it is possible to write a document by means of that markup language in a way that deny a coherent pattern assignment for all the elements described by such language. As consequence of the experimentation of this algorithm with several different corpora of XML sources, we have reached the following conclusions:
-
-in a community (e.g., a conference or a journal) that specifies the use of a very extensive, permissive, and non-pattern-based markup language, the large majority of authors use a pattern-based subset of such language for writing their scholarly documents;
-
-only a small number of pattern-based documents coming from different communities (written by different authors in different formats) is needed for automatically generate qualitatively good and generic syntactical visualisation for all documents included in all the communities in consideration.

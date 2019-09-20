@@ -1,3 +1,0 @@
-While the experiment run has been done by using documents written a specific markup language (DocBook) and, thus, the algorithm and the results are still preliminary, they are a clear exemplification of how to implement the second enhancement step of the CISE approach as depicted in the beginning of Section 4. In addition, as consequence of this experimentation, we have reached the following conclusion:
-
-only a small number of pattern-based documents of a community (written by different authors) is needed for extracting the structural semantics of the main components of all the documents included in a particular community.

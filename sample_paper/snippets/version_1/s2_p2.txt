@@ -1,1 +1,0 @@
-While the Curry-Howard isomorphism is a quite important milestones in the context of the Theoretical Computer Science area, it has seen several practical applications in different domains. For instance, the use of the isomorphism in the Linguistics domain has been ground-breaking and it has allowed the introduction of what have been known as categorial grammars [11].
