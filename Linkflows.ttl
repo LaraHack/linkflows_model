@@ -8,10 +8,10 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix wd: <https://www.w3.org/TR/annotation-model/#annotations> .
 
-@prefix : <https://github.com/LaraHack/linkflows_model/blob/master/Linkflows.ttl#> .
+@prefix : <https://w3id.org/linkflows/reviews/> .
 
 # General description:
-<https://github.com/LaraHack/linkflows_model/blob/master/Linkflows.ttl#> a owl:Ontology ;
+<https://w3id.org/linkflows/reviews/> a owl:Ontology ;
 	rdfs:comment "This vocabulary represents a finer-grained model for scientific reviews."@en ;
 	dcterms:modified "2019-06-19"^^xsd:date ;
 	dc:contributor "Tobias Kuhn"^^xsd:string ;
@@ -19,7 +19,7 @@
 	dc:creator <https://orcid.org/0000-0002-7114-6459> ;
 	dcterms:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
 	owl:versionInfo "1.0" ;
-	vann:preferredNamespaceUri "https://github.com/LaraHack/linkflows_model/blob/master/Linkflows.ttl#" ;
+	vann:preferredNamespaceUri "https://w3id.org/linkflows/reviews/" ;
 	dc:title "Linkflows reviews"@en ;
 	dc:publisher <http://http://ucds.cs.vu.nl/> ;
 	vann:preferredNamespacePrefix "lkf"^^xsd:string .
