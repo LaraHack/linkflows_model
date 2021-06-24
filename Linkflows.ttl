@@ -36,6 +36,10 @@
 :refersTo rdfs:domain :Comment .
 :refersTo rdfs:range prov:Entity .
 
+:refersToMentioningOf rdf:type rdf:Property .
+:refersToMentioningOf rdfs:domain :Comment .
+:refersToMentioningOf rdfs:range prov:Entity .
+
 :isResponseTo rdf:type rdf:Property .
 :isResponseTo rdfs:domain :ResponseComment .
 :isResponseTo rdfs:range :Comment .
